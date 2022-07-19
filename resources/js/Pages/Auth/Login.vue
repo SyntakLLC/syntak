@@ -7,6 +7,7 @@
     import JetCheckbox from '@/Jetstream/Checkbox.vue';
     import JetLabel from '@/Jetstream/Label.vue';
     import JetValidationErrors from '@/Jetstream/ValidationErrors.vue';
+    import SecondaryLink from '@/Components/buttons/SecondaryLink.vue';
 
     defineProps({
         canResetPassword: Boolean,
@@ -76,12 +77,11 @@
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                <Link
+                <SecondaryLink
                     v-if="canResetPassword"
-                    :href="route('password.request')"
-                    class="underline text-sm text-gray-600 hover:text-gray-900">
+                    :href="route('password.request')">
                     Forgot your password?
-                </Link>
+                </SecondaryLink>
 
                 <Button
                     class="ml-4"

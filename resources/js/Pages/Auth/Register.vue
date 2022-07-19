@@ -7,6 +7,7 @@
     import JetCheckbox from '@/Jetstream/Checkbox.vue';
     import JetLabel from '@/Jetstream/Label.vue';
     import JetValidationErrors from '@/Jetstream/ValidationErrors.vue';
+    import SecondaryLink from '@/Components/buttons/SecondaryLink.vue';
 
     const form = useForm({
         name: '',
@@ -111,11 +112,9 @@
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                <Link
-                    :href="route('login')"
-                    class="underline text-sm text-gray-600 hover:text-gray-900">
+                <SecondaryLink :href="route('login')">
                     Already registered?
-                </Link>
+                </SecondaryLink>
 
                 <Button
                     class="ml-4"
