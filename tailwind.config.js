@@ -32,7 +32,7 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                sans: ['Lexend', ...defaultTheme.fontFamily.sans],
+                sans: ['Inter', ...defaultTheme.fontFamily.sans],
                 display: ['Lexend', ...defaultTheme.fontFamily.sans],
             },
         },
