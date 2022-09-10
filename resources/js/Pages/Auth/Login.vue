@@ -4,10 +4,25 @@
     <SplitscreenLayout>
         <template #left>
             <div
-                class="min-h-screen flex flex-col sm:justify-center items-center w-full sm:max-w-md mx-auto">
+                class="min-h-screen flex flex-col sm:justify-center items-center w-full sm:max-w-md mx-auto px-6 pt-48 sm:p-0">
                 <JetAuthenticationCardLogo class="absolute top-20" />
 
                 <JetValidationErrors class="mb-4" />
+
+                <div class="w-full self-start mb-10">
+                    <h2 class="text-lg font-semibold text-gray-900">
+                        Sign in to your account
+                    </h2>
+                    <p class="mt-2 text-sm text-gray-700 flex flex-row">
+                        Don’t have an account?
+                        <span class="flex mx-1">
+                            <SecondaryLink :href="route('register')">
+                                Sign up
+                            </SecondaryLink>
+                        </span>
+                        for a free trial.
+                    </p>
+                </div>
 
                 <div
                     v-if="status"
