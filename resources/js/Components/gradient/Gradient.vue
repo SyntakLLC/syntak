@@ -1,5 +1,5 @@
 <template>
-    <canvas id="gradient-canvas" class="w-full h-full"></canvas>
+    <canvas id="gradient-canvas" class="w-full h-full rounded-md"></canvas>
 </template>
 
 <script>
@@ -32,14 +32,15 @@ body {
     transform: skew(10);
 }
 #gradient-canvas {
+    /* Reddish colors */
     --gradient-color-1: #8b5cf6;
     --gradient-color-2: #ec4899;
     --gradient-color-3: #e11d48;
     --gradient-color-4: #fb7185;
     /* Greenish colors */
-    /*--gradient-color-1: #ffe85e;*/
+    /*--gradient-color-1: #2dc25b;*/
     /*--gradient-color-2: #ffb43a;*/
     /*--gradient-color-3: #8dc14e;*/
-    /*--gradient-color-4: #2dc25b;*/
+    /*--gradient-color-4: #ffe85e;*/
 }
 </style>

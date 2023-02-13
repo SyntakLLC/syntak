@@ -13,14 +13,14 @@ module.exports = {
 
     theme: {
         colors: {
-            brand: colors.pink,
+            brand: colors.indigo,
             transparent: 'transparent',
             current: 'currentColor',
             black: colors.black,
             white: colors.white,
             slate: colors.slate,
             gray: colors.gray,
-            green: colors.green,
+            emerald: colors.emerald,
             indigo: colors.indigo,
             yellow: colors.yellow,
             red: colors.red,
@@ -29,11 +29,17 @@ module.exports = {
             orange: colors.orange,
             pink: colors.pink,
             rose: colors.rose,
+            zinc: colors.zinc,
         },
         extend: {
             fontFamily: {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans],
+                serif: ['Playfair Display', ...defaultTheme.fontFamily.serif],
                 display: ['Lexend', ...defaultTheme.fontFamily.sans],
+            },
+            backgroundImage: {
+                'gradient-radial':
+                    'radial-gradient(var(--gradient-color-stops))',
             },
         },
     },

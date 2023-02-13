@@ -1,23 +1,57 @@
-<script setup>
-import { Head, Link } from '@inertiajs/inertia-vue3';
-import Gradient from "@/Components/gradient/Gradient.vue";
-
-defineProps({
-    canLogin: Boolean,
-    canRegister: Boolean,
-    laravelVersion: String,
-    phpVersion: String,
-});
-</script>
-
 <template>
-    <Head title="Welcome" />
+    <Head>
+        <title>Startup Websites</title>
+    </Head>
 
-    <div class="min-h-screen w-screen flex items-center justify-center">
+    <AppLayout>
+            <p class="text-lg text-white">Hi! I'm Amaan. I build...</p>
 
-        <h1 class="relative max-w-sm flex text-center pt-2 pb-6 px-6">
-            <Gradient class="block absolute -inset-1 -skew-y-3"/>
-            <span class="mx-auto z-50 relative text-white font-display font-bold text-8xl">Syntak</span>
-        </h1>
-    </div>
+            <h1 class="text-6xl text-white font-semibold tracking-tight"
+                style="
+                    background: radial-gradient(#a5e0f1, #6d61ed);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                ">
+                Startup websites that are out of this world.
+            </h1>
+
+            <div class="flex pt-2 space-x-4 items-center">
+                <Button @click="openCalendlyModal">Contact Us</Button>
+
+                <button class="group flex items-center">
+                    <Link :href="route('project.index')"
+                        class="mb-2 text-secondary text-white group-hover:text-slate-200 font-semibold opacity-70">
+                        Our work
+                    </Link>
+                    <HoverArrow/>
+                </button>
+            </div>
+    </AppLayout>
 </template>
+
+<script>
+import { Head, Link } from '@inertiajs/inertia-vue3';
+import Button from "@/Components/buttons/Button";
+import SecondaryLink from "@/Components/buttons/SecondaryLink";
+import HoverArrow from "@/Components/garnish/HoverArrow";
+import AppLayout from "@/Layouts/AppLayout";
+
+export default {
+    name: 'Welcome',
+
+    components: {
+        AppLayout,
+        HoverArrow,
+        SecondaryLink,
+        Head, Link,
+        Button,
+    },
+
+    methods: {
+        openCalendlyModal() {
+            Calendly.initPopupWidget({url: 'https://calendly.com/syntak/interested-in-a-website-or-app'});
+            return false;
+        }
+    }
+}
+</script>

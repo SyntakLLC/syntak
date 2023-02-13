@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .clickable {
+        @apply hover:scale-95 transition;
+    }
+
+    /*.heading-xl {*/
+    /*    @apply text-5xl font-semibold tracking-tight text-gray-900 dark:text-white;*/
+    /*}*/
+
+    .heading-lg {
+        @apply text-lg font-semibold text-slate-900;
+    }
+
+    /*.heading-sm {*/
+    /*    @apply h-8 text-lg font-medium dark:text-gray-200;*/
+    /*}*/
+
+    /*.heading-xs {*/
+    /*    @apply text-sm font-medium text-gray-900 dark:text-gray-100;*/
+    /*}*/
+
+    .text-secondary {
+        @apply mt-2 text-sm text-gray-700 flex flex-row;
+    }
+
+    /*.rounded-border {*/
+    /*    @apply sm:rounded-lg border border-gray-200 dark:border-gray-700;*/
+    /*}*/
+
+    /*.xs-uppercase-secondary {*/
+    /*    @apply text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider;*/
+    /*}*/
+
+    /*.bg-theme-primary {*/
+    /*    @apply bg-white dark:bg-[#171923];*/
+    /*}*/
+
+    /*.bg-theme-secondary {*/
+    /*    @apply bg-brand-0 dark:bg-[#12141c];*/
+    /*}*/
+}
+
+/* Makes the selection text brand colored */
+/*::selection {*/
+/*    background: #fef3c7; !* WebKit/Blink Browsers *!*/
+/*}*/
+
+/*::-moz-selection {*/
+/*    background: #fef3c7; !* Gecko Browsers *!*/
+/*}*/
+
+/*:root {*/
+/*    --cc-btn-primary-bg: #028560;*/
+/*}*/
