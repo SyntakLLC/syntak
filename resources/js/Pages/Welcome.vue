@@ -4,8 +4,12 @@
     </Head>
 
     <div id="nav-backdrop" class="pt-4 shadow-inner" style="background: radial-gradient(#f2fbff, #7dd3fb, #6d61ed);">
-        <div id="hero" :class="[isMenuOpen ? 'top-48' : 'top-0', 'relative bg-dark-primary rounded-t-3xl min-h-screen transition-all']">
+        <div id="hero" :class="[isMenuOpen ? 'top-48' : 'top-0', 'relative bg-dark-primary rounded-t-3xl transition-all overflow-hidden min-h-screen']">
 
+            <!-- Stars -->
+            <Stars class="absolute w-screen opacity-50"/>
+
+            <!-- Logo -->
             <div id="logo" class="absolute top-8 left-8 z-50">
                 <Link :href="route('welcome')"
                       class="max-w-[12rem] -skew-y-6 flex text-center pt-0 pb-3 px-3">
@@ -14,6 +18,7 @@
                 </Link>
             </div>
 
+            <!-- Menu button -->
             <div id="menu-button-location" class="absolute top-8 right-8 z-50">
                 <DarkButton @click="toggleMenu">
                     {{ isMenuOpen ? 'Close' : 'Menu' }}
@@ -24,9 +29,11 @@
                 </DarkButton>
             </div>
 
+            <!-- Horizontal bars -->
             <div id="horizontal-bars" class="absolute mt-48 border-y border-color-dark w-full h-64" />
 
-            <div id="hero-center" class="relative max-w-2xl mx-auto border-x border-color-dark h-full">
+            <!-- Center of the hero -->
+            <div id="hero-center" class="relative max-w-2xl mx-auto border-x border-color-dark h-full min-h-screen">
 
                 <div id="bars" class="absolute grid grid-cols-4 md:grid-cols-6 gap-10 w-full h-full z-0">
                     <div class="bg-dark-secondary w-full h-full border-x border-dashed border-slate-800 -ml-px"/>
@@ -57,16 +64,24 @@
                 <div id="button-section" class="relative h-full w-full text-center text-md text-white py-8">
                     <ContactUsButton/>
 
-                    <div class="hero-text-secondary mt-48 pb-20">We've worked with some of the most talented business owners.</div>
+<!--                    <div class="hero-text-secondary mt-48 pb-20">We've worked with some of the most talented business owners.</div>-->
                 </div>
             </div>
 
-            <div id="logo-cloud" class="relative bg-gradient-to-b from-transparent via-[#100e25] to-[#100e25] -mt-28 z-10 max-w-4xl mx-auto py-10 grid grid-cols-4 items-center gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:grid-cols-5">
-                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg" alt="Transistor" width="158" height="48" />
-                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg" alt="Reform" width="158" height="48" />
-                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg" alt="Tuple" width="158" height="48" />
-                <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg" alt="SavvyCal" width="158" height="48" />
-                <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg" alt="Statamic" width="158" height="48" />
+            <!-- Logo cloud -->
+<!--            <div id="logo-cloud" class="relative bg-gradient-to-b from-transparent via-[#100e25] to-[#100e25] -mt-28 z-10 max-w-4xl mx-auto py-10 grid grid-cols-4 items-center gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:grid-cols-5">-->
+<!--                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg" alt="Transistor" width="158" height="48" />-->
+<!--                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg" alt="Reform" width="158" height="48" />-->
+<!--                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg" alt="Tuple" width="158" height="48" />-->
+<!--                <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg" alt="SavvyCal" width="158" height="48" />-->
+<!--                <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg" alt="Statamic" width="158" height="48" />-->
+<!--            </div>-->
+
+            <!-- Planet -->
+            <div id="planet" class="hidden-mobile">
+                <div class="absolute w-[200vw] aspect-square blur-[50px] top-2/3 -left-full">
+                    <div class="w-[200vw] absolute aspect-square rounded-full bg-white glow-purple"/>
+                </div>
             </div>
         </div>
     </div>
@@ -75,6 +90,7 @@
 <script>
 import { Head, Link } from '@inertiajs/inertia-vue3';
 import Gradient from "@/Components/gradient/Gradient.vue";
+import Stars from "@/Components/garnish/Stars.vue";
 import { MenuIcon, XIcon } from '@heroicons/vue/solid';
 import Button from "@/Components/buttons/Button";
 import SecondaryLink from "@/Components/buttons/SecondaryLink";
@@ -88,7 +104,7 @@ export default {
     name: 'Welcome',
 
     components: {
-        Gradient,
+        Gradient, Stars,
         DarkButton,
         ContactUsButton,
         AppLayout,
@@ -118,3 +134,9 @@ export default {
     }
 }
 </script>
+
+<style lang="css">
+.glow-purple {
+    box-shadow: 0 0 200px rgb(110 103 238);
+}
+</style>
