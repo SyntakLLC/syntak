@@ -1,13 +1,27 @@
 <template>
-    <Button @click="openCalendlyModal">Contact Us</Button>
+    <DarkButton v-if="dark" @click="openCalendlyModal">
+        Contact Us
+        <template #icon>
+            <HoverArrow />
+        </template>
+    </DarkButton>
+    <Button v-else @click="openCalendlyModal">Contact Us</Button>
 </template>
 
 <script>
 import Button from "@/Components/buttons/Button";
+import DarkButton from "@/Components/buttons/DarkButton";
+import HoverArrow from "@/Components/garnish/HoverArrow";
 
 export default {
     name: "ContactUsButton",
-    components: {Button},
+    components: {HoverArrow, DarkButton, Button},
+    props: {
+        dark: {
+            type: Boolean,
+            default: false,
+        }
+    },
 
     methods: {
         openCalendlyModal() {

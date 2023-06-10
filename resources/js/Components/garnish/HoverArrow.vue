@@ -14,7 +14,7 @@ export default {
     computed: {
         computedColor() {
             switch (this.color) {
-                case "primary": return "stroke-slate-900";
+                case "primary": return "stroke-[#010b40]";
                 default: return "stroke-white";
             }
         }
