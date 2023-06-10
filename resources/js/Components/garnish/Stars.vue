@@ -1,19 +1,19 @@
 <template>
     <div class="z-0">
         <div class="star-1 blur-xs"></div> <!-- used to be xs -->
-        <div class="star-2 blur-sm"></div>
+        <div class="star-2 blur-xs"></div>
         <div class="star-3 blur-xs"></div> <!-- used to be xs -->
-        <div class="star-4 blur-sm"></div>
+        <div class="star-4 blur-xs"></div>
         <div class="star-5 blur-xs"></div> <!-- used to be xs -->
-        <div class="star-6 blur-sm"></div>
+        <div class="star-6 blur-xs"></div>
         <div class="star-7 blur-xs"></div> <!-- used to be xs -->
-        <div class="star-8 blur-sm"></div>
+        <div class="star-8 blur-xs"></div>
         <div class="star-9 blur-xs"></div> <!-- used to be xs -->
-        <div class="star-10 blur-sm"></div>
+        <div class="star-10 blur-xs"></div>
         <div class="star-11 blur-xs"></div> <!-- used to be xs -->
-        <div class="star-12 blur-sm"></div>
+        <div class="star-12 blur-xs"></div>
         <div class="star-13 blur-xs"></div> <!-- used to be xs -->
-        <div class="star-14 blur-sm"></div>
+        <div class="star-14 blur-xs"></div>
         <div class="star-15 blur-xs"></div> <!-- used to be xs -->
     </div>
 </template>

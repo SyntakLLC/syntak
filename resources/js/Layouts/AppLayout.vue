@@ -34,7 +34,7 @@
 
 
         <!-- Main content -->
-        <main class="mx-auto max-w-xl px-8 pt-8 md:pt-0 top-20 relative flex flex-col space-y-8">
+        <main class="mx-auto max-w-2xl px-8 pt-8 md:pt-0 top-20 relative flex flex-col space-y-8">
             <slot />
         </main>
         <!-- End of Main content -->

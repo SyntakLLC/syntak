@@ -13,7 +13,6 @@ module.exports = {
 
     theme: {
         colors: {
-            brand: colors.indigo,
             transparent: 'transparent',
             current: 'currentColor',
             black: colors.black,
@@ -30,6 +29,7 @@ module.exports = {
             pink: colors.pink,
             rose: colors.rose,
             zinc: colors.zinc,
+            brand: colors.sky,
         },
         extend: {
             fontFamily: {

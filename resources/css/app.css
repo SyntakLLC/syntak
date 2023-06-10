@@ -4,45 +4,47 @@
 
 
 @layer components {
+    .bg-dark-primary {
+        @apply bg-[#100e25];
+    }
+    .bg-dark-secondary {
+        @apply bg-[#18162e];
+    }
+
     .clickable {
         @apply hover:scale-95 transition;
     }
-
-    /*.heading-xl {*/
-    /*    @apply text-5xl font-semibold tracking-tight text-gray-900 dark:text-white;*/
-    /*}*/
-
-    .heading-lg {
-        @apply text-lg font-semibold text-slate-900;
-    }
-
-    /*.heading-sm {*/
-    /*    @apply h-8 text-lg font-medium dark:text-gray-200;*/
-    /*}*/
-
-    /*.heading-xs {*/
-    /*    @apply text-sm font-medium text-gray-900 dark:text-gray-100;*/
-    /*}*/
 
     .text-secondary {
         @apply mt-2 text-sm text-gray-700 flex flex-row;
     }
 
-    /*.rounded-border {*/
-    /*    @apply sm:rounded-lg border border-gray-200 dark:border-gray-700;*/
-    /*}*/
+    .hero-text-secondary {
+        @apply text-center text-white;
+    }
 
-    /*.xs-uppercase-secondary {*/
-    /*    @apply text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider;*/
-    /*}*/
+    .heading-sm {}
+    .heading-md {}
+    .heading-lg {}
+    .heading-xl {
+        @apply text-6xl md:text-7xl font-semibold tracking-tight text-center;
+    }
 
-    /*.bg-theme-primary {*/
-    /*    @apply bg-white dark:bg-[#171923];*/
-    /*}*/
+    .rounded-size {
+        @apply rounded-xl;
+    }
+    .border-color {}
+    .border-color-dark {
+        @apply border-[#35334c];
+    }
 
-    /*.bg-theme-secondary {*/
-    /*    @apply bg-brand-0 dark:bg-[#12141c];*/
-    /*}*/
+    .padding {
+        @apply p-6;
+    }
+
+    .hidden-mobile {
+        @apply hidden md:block;
+    }
 }
 
 /* Makes the selection text brand colored */
