@@ -6,6 +6,14 @@
     <div id="nav-backdrop" class="pt-4 shadow-inner" style="background: radial-gradient(#f2fbff, #7dd3fb, #6d61ed);">
         <div id="hero" :class="[isMenuOpen ? 'top-48' : 'top-0', 'relative bg-dark-primary rounded-t-3xl min-h-screen transition-all']">
 
+            <div id="logo" class="absolute top-8 left-8 z-50">
+                <Link :href="route('welcome')"
+                      class="max-w-[12rem] -skew-y-6 flex text-center pt-0 pb-3 px-3">
+                    <Gradient class="block absolute -inset-1"/>
+                    <span class="mx-auto z-50 relative text-white font-display font-bold text-2xl">Syntak</span>
+                </Link>
+            </div>
+
             <div id="menu-button-location" class="absolute top-8 right-8 z-50">
                 <DarkButton @click="toggleMenu">
                     {{ isMenuOpen ? 'Close' : 'Menu' }}
@@ -66,6 +74,7 @@
 
 <script>
 import { Head, Link } from '@inertiajs/inertia-vue3';
+import Gradient from "@/Components/gradient/Gradient.vue";
 import { MenuIcon, XIcon } from '@heroicons/vue/solid';
 import Button from "@/Components/buttons/Button";
 import SecondaryLink from "@/Components/buttons/SecondaryLink";
@@ -79,6 +88,7 @@ export default {
     name: 'Welcome',
 
     components: {
+        Gradient,
         DarkButton,
         ContactUsButton,
         AppLayout,
