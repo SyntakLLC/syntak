@@ -34,8 +34,8 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans],
-                serif: ['Playfair Display', ...defaultTheme.fontFamily.serif],
-                display: ['Lexend', ...defaultTheme.fontFamily.sans],
+                display: ['Manrope', ...defaultTheme.fontFamily.sans],
+                logo: ['Lexend', ...defaultTheme.fontFamily.sans],
             },
             backgroundImage: {
                 'gradient-radial':

@@ -8,7 +8,7 @@
         <div class="absolute w-full">
             <div id="navigation" class="relative px-16 py-12 w-full text-[#010b40] space-y-8">
 
-                <div class="text-5xl font-semibold tracking-tight">Our work</div>
+                <div class="text-5xl font-semibold font-display">Our work</div>
 
                 <div class="grid md:grid-cols-4 gap-8 w-full">
                     <a v-for="item in navigation"
@@ -36,7 +36,7 @@
                 <Link :href="route('welcome')"
                       class="max-w-[12rem] -skew-y-6 flex text-center pt-0 pb-3 px-3">
                     <Gradient class="block absolute -inset-1"/>
-                    <span class="mx-auto z-50 relative text-white font-display font-bold text-2xl">Syntak</span>
+                    <span class="-ml-1 z-50 relative text-white font-logo font-bold text-2xl">Syntak</span>
                 </Link>
             </div>
 
@@ -111,6 +111,10 @@
                     <div class="w-[200vw] absolute aspect-square rounded-full bg-white glow-purple"/>
                 </div>
             </div>
+        </div>
+
+        <div class="w-full h-48 bg-dark-primary border-t border-color-dark">
+            <div class="h-48 w-full bg-dark-secondary"/>
         </div>
     </div>
 </template>
