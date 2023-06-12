@@ -200,7 +200,6 @@ import { MenuIcon, XIcon, BriefcaseIcon } from '@heroicons/vue/solid';
 import Button from "@/Components/buttons/Button";
 import SecondaryLink from "@/Components/buttons/SecondaryLink";
 import HoverArrow from "@/Components/garnish/HoverArrow";
-import AppLayout from "@/Layouts/AppLayout";
 import ContactUsButton from "@/Components/buttons/ContactUsButton";
 import DarkButton from "@/Components/buttons/DarkButton";
 import moment from "moment";
@@ -214,7 +213,6 @@ export default {
         Gradient, Stars,
         DarkButton,
         ContactUsButton,
-        AppLayout,
         HoverArrow,
         SecondaryLink,
         Head, Link,
