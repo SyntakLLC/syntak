@@ -33,6 +33,7 @@
         "@headlessui/vue": "^1.6.7",
         "@heroicons/vue": "^1.0.6",
         "@prettier/plugin-php": "^0.18.9",
+        "aos": "^2.3.4",
         "moment": "^2.29.4"
     }
 }

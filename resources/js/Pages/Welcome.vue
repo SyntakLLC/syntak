@@ -104,10 +104,13 @@
                         <!-- Point 1 - attitude -->
                         <div id="attitude" class="pb-8">
                             <div class="flex flex-row space-x-6">
-                                <div class="h-8 w-8 aspect-square text-gray-800 font-display font-bold flex items-center justify-center rounded-full bg-gradient-blue">1</div>
+                                <div class="h-8 w-8 aspect-square text-gray-800 font-display font-bold flex items-center justify-center rounded-full bg-gradient-blue"
+                                     data-aos="fade-up">
+                                    1
+                                </div>
 
                                 <div>
-                                    <div class="heading-lg text-white">The brand attitude</div>
+                                    <div class="heading-lg text-white" data-aos="fade-up">The brand attitude</div>
                                     <p class="pt-4 hero-text-secondary-sm text-left">
                                         Any time a potential customer looks at your brand, they should <span class="italic">feel</span> the unique personality of your brand. We've helped startups from all different industries –– education, real estate, sports, and AI –– develop a unique brand that helped carve out a space for their product in each industry.
                                     </p>
@@ -118,10 +121,13 @@
                         <!-- Point 2 - complex -->
                         <div id="complex" class="py-8">
                             <div class="flex flex-row space-x-6">
-                                <div class="h-8 w-8 aspect-square text-gray-800 font-display font-bold flex items-center justify-center rounded-full bg-gradient-blue">2</div>
+                                <div class="h-8 w-8 aspect-square text-gray-800 font-display font-bold flex items-center justify-center rounded-full bg-gradient-blue"
+                                     data-aos="fade-up">
+                                    2
+                                </div>
 
                                 <div>
-                                    <div class="heading-lg text-white">The complexity</div>
+                                    <div class="heading-lg text-white" data-aos="fade-up">The complexity</div>
                                     <p class="pt-4 hero-text-secondary-sm text-left">
                                         Whether you need to support integrations with external APIs, marketplace interactions between users, or anything else, we've got you covered.
                                     </p>
@@ -132,10 +138,13 @@
                         <!-- Point 3 - powerful -->
                         <div id="powerful" class="pt-8">
                             <div class="flex flex-row space-x-6">
-                                <div class="h-8 w-8 aspect-square text-gray-800 font-display font-bold flex items-center justify-center rounded-full bg-gradient-blue">3</div>
+                                <div class="h-8 w-8 aspect-square text-gray-800 font-display font-bold flex items-center justify-center rounded-full bg-gradient-blue"
+                                     data-aos="fade-up">
+                                    3
+                                </div>
 
                                 <div>
-                                    <div class="heading-lg text-white">The user experience</div>
+                                    <div class="heading-lg text-white" data-aos="fade-up">The user experience</div>
                                     <p class="pt-4 hero-text-secondary-sm text-left">
                                         With experience designing both business-facing and consumer facing products for Millenials to Gen Z-ers, we know how to design an impressive user experience that leaves potential customers hooked.
                                     </p>
@@ -166,7 +175,7 @@
 
                 <!-- Three images -->
                 <div class="max-w-2xl pt-16 mx-auto w-full">
-                    <div class="grid grid-cols-3">
+                    <div class="grid grid-cols-3" data-aos="fade-up">
                         <img src="https://i.imgur.com/WhKeGzv.png"
                              alt="Athlete Pass Dashboard"
                              class="rounded-3xl w-40 aspect-square object-cover rotate-[10deg]"/>
@@ -193,6 +202,8 @@
 </template>
 
 <script>
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import { Head, Link } from '@inertiajs/inertia-vue3';
 import Gradient from "@/Components/gradient/Gradient.vue";
 import Stars from "@/Components/garnish/Stars.vue";
@@ -247,6 +258,10 @@ export default {
         return {
             navigation
         }
+    },
+
+    mounted() {
+        AOS.init();
     },
 
     data() {
