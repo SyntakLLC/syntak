@@ -100,7 +100,7 @@
 
                 <!-- Three points -->
                 <div id="three-points" class="relative mt-16 border-y border-color-dark border-dashed">
-                    <div class="relative z-10 bg-dark-secondary max-w-2xl mx-auto divide-y divide-dashed divide-[#35334c] border-x border-color-dark p-8">
+                    <div class="relative z-10 bg-dark-secondary max-w-2xl mx-auto divide-y divide-dashed divide-[#35334c] md:border-x border-color-dark p-8">
                         <!-- Point 1 - attitude -->
                         <div id="attitude" class="pb-8">
                             <div class="flex flex-row space-x-6">
