@@ -31,10 +31,10 @@
     .heading-sm {}
     .heading-md {}
     .heading-lg {
-        @apply text-2xl font-semibold font-display;
+        @apply text-2xl font-semibold font-display tracking-tighter;
     }
     .heading-xl {
-        @apply text-6xl md:text-7xl font-semibold font-display text-center bg-gradient-blue;
+        @apply text-6xl md:text-7xl font-semibold font-display tracking-tighter text-center bg-gradient-blue;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }

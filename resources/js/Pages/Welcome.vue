@@ -9,7 +9,7 @@
         <div class="absolute w-full">
             <div id="navigation" class="relative px-16 py-12 w-full text-[#010b40] space-y-8">
 
-                <div class="text-5xl font-semibold font-display">Our work</div>
+                <div class="text-5xl font-semibold font-display tracking-tighter">Our work</div>
 
                 <div class="grid md:grid-cols-4 gap-8 w-full">
                     <a v-for="item in navigation"
@@ -104,7 +104,7 @@
                         <!-- Point 1 - attitude -->
                         <div id="attitude" class="pb-8">
                             <div class="flex flex-row space-x-6">
-                                <div class="h-8 w-8 aspect-square text-gray-800 font-display font-bold flex items-center justify-center rounded-full bg-gradient-blue"
+                                <div class="h-8 w-8 aspect-square text-gray-800 font-display tracking-tighter font-bold flex items-center justify-center rounded-full bg-gradient-blue"
                                      data-aos="fade-up">
                                     1
                                 </div>
@@ -121,7 +121,7 @@
                         <!-- Point 2 - complex -->
                         <div id="complex" class="py-8">
                             <div class="flex flex-row space-x-6">
-                                <div class="h-8 w-8 aspect-square text-gray-800 font-display font-bold flex items-center justify-center rounded-full bg-gradient-blue"
+                                <div class="h-8 w-8 aspect-square text-gray-800 font-display tracking-tighter font-bold flex items-center justify-center rounded-full bg-gradient-blue"
                                      data-aos="fade-up">
                                     2
                                 </div>
@@ -138,7 +138,7 @@
                         <!-- Point 3 - powerful -->
                         <div id="powerful" class="pt-8">
                             <div class="flex flex-row space-x-6">
-                                <div class="h-8 w-8 aspect-square text-gray-800 font-display font-bold flex items-center justify-center rounded-full bg-gradient-blue"
+                                <div class="h-8 w-8 aspect-square text-gray-800 font-display tracking-tighter font-bold flex items-center justify-center rounded-full bg-gradient-blue"
                                      data-aos="fade-up">
                                     3
                                 </div>
@@ -178,20 +178,20 @@
                     <div class="grid grid-cols-3" data-aos="fade-up">
                         <img src="https://i.imgur.com/WhKeGzv.png"
                              alt="Athlete Pass Dashboard"
-                             class="rounded-3xl w-40 aspect-square object-cover rotate-[10deg]"/>
+                             class="border border-color-dark rounded-3xl w-40 aspect-square object-cover rotate-[10deg]"/>
                         <img src="https://i.imgur.com/vkLoRx8.png"
                              alt="Notedly AI Homepage"
-                             class="rounded-3xl w-72 aspect-square object-cover rotate-[-10deg] md:-ml-3 z-10"/>
+                             class="border border-color-dark rounded-3xl w-72 aspect-square object-cover rotate-[-10deg] md:-ml-3 z-10"/>
                         <img src="https://i.imgur.com/cWpmCQl.png"
                              alt="Homexe Realty Dashboards"
-                             class="rounded-3xl w-40 aspect-square object-cover rotate-[10deg] md:ml-12"/>
+                             class="border border-color-dark rounded-3xl w-40 aspect-square object-cover rotate-[10deg] md:ml-12"/>
                     </div>
                 </div>
             </div>
         </main>
 
         <footer class="w-full max-w-7xl mx-auto text-[#010b40] py-12 space-y-8 px-6">
-            <div class="text-5xl font-semibold font-display">Contact us</div>
+            <div class="text-5xl font-semibold font-display tracking-tighter">Contact us</div>
 
             <div class="space-y-2">
                 <div class="heading-lg">Email: <a href="mailto:contact@syntak.co" class="underline">contact@syntak.co</a></div>
