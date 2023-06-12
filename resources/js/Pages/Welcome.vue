@@ -3,8 +3,9 @@
         <title>Startup Websites</title>
     </Head>
 
-    <div id="nav-backdrop" class="relative pt-4 shadow-inner" style="background: radial-gradient(#f2fbff, #7dd3fb, #6d61ed);">
+    <div id="nav-backdrop" class="relative pt-4 shadow-inner bg-gradient-blue">
 
+        <!-- Navigation menu -->
         <div class="absolute w-full">
             <div id="navigation" class="relative px-16 py-12 w-full text-[#010b40] space-y-8">
 
@@ -26,7 +27,7 @@
             </div>
         </div>
 
-        <div id="hero" :class="[isMenuOpen ? 'top-[652px] md:top-72' : 'top-0', 'relative bg-dark-primary rounded-t-3xl transition-all overflow-hidden min-h-screen']">
+        <div id="hero" :class="[isMenuOpen ? 'top-[652px] md:top-72' : 'top-0', 'relative bg-dark-primary rounded-t-3xl transition-all overflow-hidden md:min-h-screen z-50']">
 
             <!-- Stars -->
             <Stars class="absolute w-screen opacity-50"/>
@@ -55,16 +56,9 @@
             <div id="horizontal-bars" class="absolute mt-48 border-y border-color-dark w-full h-64" />
 
             <!-- Center of the hero -->
-            <div id="hero-center" class="relative max-w-2xl mx-auto border-x border-color-dark h-full min-h-screen">
+            <div id="hero-center" class="relative max-w-2xl mx-auto border-x border-color-dark h-full md:min-h-screen pb-16 md:pb-0">
 
-                <div id="bars" class="absolute grid grid-cols-4 md:grid-cols-6 gap-10 w-full h-full z-0">
-                    <div class="bg-dark-secondary w-full h-full border-x border-dashed border-slate-800 -ml-px"/>
-                    <div class="bg-dark-secondary w-full h-full border-x border-dashed border-slate-800"/>
-                    <div class="bg-dark-secondary w-full h-full border-x border-dashed border-slate-800 hidden-mobile"/>
-                    <div class="bg-dark-secondary w-full h-full border-x border-dashed border-slate-800 hidden-mobile"/>
-                    <div class="bg-dark-secondary w-full h-full border-x border-dashed border-slate-800"/>
-                    <div class="bg-dark-secondary w-full h-full border-x border-dashed border-slate-800 -mr-px"/>
-                </div>
+                <VerticalBars id="bars" />
 
                 <div id="datetime" class="relative h-48 w-full hero-text-secondary pt-8">
                     <span class="hidden-mobile">
@@ -73,12 +67,7 @@
                 </div>
 
                 <div id="hero-center-content" class="relative flex items-center border-y border-color-dark p-2 h-64">
-                    <h1 id="heading" class="heading-xl"
-                        style="
-                            background: radial-gradient(#f2fbff, #7dd3fb, #6d61ed);
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                        ">
+                    <h1 id="heading" class="heading-xl">
                         Startup websites that are out of this world.
                     </h1>
                 </div>
@@ -91,17 +80,6 @@
                         </template>
                     </Button>
                     <ContactUsButton :dark="true"/>
-
-                    <div class="block md:hidden hero-text-secondary mt-24">We've worked with some of the most talented business owners.</div>
-
-                    <!-- Logo cloud -->
-                    <div id="logo-cloud" class="md:hidden relative bg-gradient-to-b from-transparent via-[#100e25] to-[#100e25] z-10 max-w-4xl mx-auto py-10 grid grid-cols-4 items-center gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:grid-cols-5">
-                        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg" alt="Transistor" width="158" height="48" />
-                        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg" alt="Reform" width="158" height="48" />
-                        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg" alt="Tuple" width="158" height="48" />
-                        <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg" alt="SavvyCal" width="158" height="48" />
-                        <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg" alt="Statamic" width="158" height="48" />
-                    </div>
                 </div>
             </div>
 
@@ -113,9 +91,104 @@
             </div>
         </div>
 
-        <div class="w-full h-48 bg-dark-primary border-t border-color-dark">
-            <div class="h-48 w-full bg-dark-secondary"/>
-        </div>
+        <!-- Main content -->
+        <main class="relative w-full bg-dark-primary border-t border-color-dark">
+            <!-- Section #1 -->
+            <div class="relative bg-dark-secondary border-b border-color-dark pt-16 px-6">
+                <div class="heading-xl pb-6 text-5xl">Impressions last.</div>
+                <div class="heading-lg text-center text-white">Make yours perfect.</div>
+
+                <!-- Three points -->
+                <div id="three-points" class="relative mt-16 border-y border-color-dark border-dashed">
+                    <div class="relative z-10 bg-dark-secondary max-w-2xl mx-auto divide-y divide-dashed divide-[#35334c] border-x border-color-dark p-8">
+                        <!-- Point 1 - attitude -->
+                        <div id="attitude" class="pb-8">
+                            <div class="flex flex-row space-x-6">
+                                <div class="h-8 w-8 aspect-square text-gray-800 font-display font-bold flex items-center justify-center rounded-full bg-gradient-blue">1</div>
+
+                                <div>
+                                    <div class="heading-lg text-white">The brand attitude</div>
+                                    <p class="pt-4 hero-text-secondary-sm text-left">
+                                        Any time a potential customer looks at your brand, they should <span class="italic">feel</span> the unique personality of your brand. We've helped startups from all different industries –– education, real estate, sports, and AI –– develop a unique brand that helped carve out a space for their product in each industry.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Point 2 - complex -->
+                        <div id="complex" class="py-8">
+                            <div class="flex flex-row space-x-6">
+                                <div class="h-8 w-8 aspect-square text-gray-800 font-display font-bold flex items-center justify-center rounded-full bg-gradient-blue">2</div>
+
+                                <div>
+                                    <div class="heading-lg text-white">The complexity</div>
+                                    <p class="pt-4 hero-text-secondary-sm text-left">
+                                        Whether you need to support integrations with external APIs, marketplace interactions between users, or anything else, we've got you covered.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Point 3 - powerful -->
+                        <div id="powerful" class="pt-8">
+                            <div class="flex flex-row space-x-6">
+                                <div class="h-8 w-8 aspect-square text-gray-800 font-display font-bold flex items-center justify-center rounded-full bg-gradient-blue">3</div>
+
+                                <div>
+                                    <div class="heading-lg text-white">The user experience</div>
+                                    <p class="pt-4 hero-text-secondary-sm text-left">
+                                        With experience designing both business-facing and consumer facing products for Millenials to Gen Z-ers, we know how to design an impressive user experience that leaves potential customers hooked.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section #2 - Testimonial -->
+            <div class="relative max-w-2xl mx-auto bg-dark-primary">
+                <VerticalBars id="bars-2" class="opacity-50"/>
+
+                <div class="relative z-10 py-20 px-6">
+                    <div class="heading-xl py-4 text-5xl">
+                        "You won’t find more readily accessible, reliable, and diligent web developers."
+                    </div>
+                    <div class="heading-lg pt-6 text-center text-white">Harry Eppers, Athlete Pass</div>
+                </div>
+            </div>
+
+
+            <!-- Section #3 -->
+            <div class="relative bg-dark-secondary border-y border-color-dark py-16 px-6">
+                <div class="heading-xl text-5xl">Be the real deal.</div>
+                <div class="heading-lg pt-6 text-center text-white">Jaw dropping websites your customers will adore.</div>
+
+                <!-- Three images -->
+                <div class="max-w-2xl pt-16 mx-auto w-full">
+                    <div class="grid grid-cols-3">
+                        <img src="https://i.imgur.com/WhKeGzv.png"
+                             alt="Athlete Pass Dashboard"
+                             class="rounded-3xl w-40 aspect-square object-cover rotate-[10deg]"/>
+                        <img src="https://i.imgur.com/vkLoRx8.png"
+                             alt="Notedly AI Homepage"
+                             class="rounded-3xl w-72 aspect-square object-cover rotate-[-10deg] md:-ml-3 z-10"/>
+                        <img src="https://i.imgur.com/cWpmCQl.png"
+                             alt="Homexe Realty Dashboards"
+                             class="rounded-3xl w-40 aspect-square object-cover rotate-[10deg] md:ml-12"/>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="w-full max-w-7xl mx-auto text-[#010b40] py-12 space-y-8 px-6">
+            <div class="text-5xl font-semibold font-display">Contact us</div>
+
+            <div class="space-y-2">
+                <div class="heading-lg">Email: <a href="mailto:contact@syntak.co" class="underline">contact@syntak.co</a></div>
+                <div class="heading-lg">Calendly: <a target="_blank" class="underline" href="https://calendly.com/syntak/interested-in-a-website-or-app">Meeting link</a></div>
+            </div>
+        </footer>
     </div>
 </template>
 
@@ -131,11 +204,13 @@ import AppLayout from "@/Layouts/AppLayout";
 import ContactUsButton from "@/Components/buttons/ContactUsButton";
 import DarkButton from "@/Components/buttons/DarkButton";
 import moment from "moment";
+import VerticalBars from "@/Components/garnish/VerticalBars";
 
 export default {
     name: 'Welcome',
 
     components: {
+        VerticalBars,
         Gradient, Stars,
         DarkButton,
         ContactUsButton,

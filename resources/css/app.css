@@ -10,6 +10,9 @@
     .bg-dark-secondary {
         @apply bg-[#18162e];
     }
+    .bg-gradient-blue {
+        background: radial-gradient(#f2fbff, #7dd3fb, #6d61ed);
+    }
 
     .clickable {
         @apply hover:scale-95 transition;
@@ -18,9 +21,11 @@
     .text-secondary {
         @apply mt-2 text-sm text-gray-700 flex flex-row;
     }
-
     .hero-text-secondary {
         @apply text-center text-white;
+    }
+    .hero-text-secondary-sm {
+        @apply text-base text-center text-gray-300;
     }
 
     .heading-sm {}
@@ -29,7 +34,9 @@
         @apply text-2xl font-semibold font-display;
     }
     .heading-xl {
-        @apply text-6xl md:text-7xl font-semibold font-display text-center; /* tracking-tight */
+        @apply text-6xl md:text-7xl font-semibold font-display text-center bg-gradient-blue;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .rounded-size {
