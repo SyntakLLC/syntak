@@ -53,7 +53,7 @@
             </div>
 
             <!-- Horizontal bars -->
-            <div id="horizontal-bars" class="absolute mt-48 border-y border-color-dark w-full h-64" />
+            <div id="horizontal-bars" class="absolute mt-48 border-y border-color-dark w-full h-80 md:h-64" />
 
             <!-- Center of the hero -->
             <div id="hero-center" class="relative max-w-2xl mx-auto border-x border-color-dark h-full md:min-h-screen pb-16 md:pb-0">
@@ -66,7 +66,7 @@
                     </span>
                 </div>
 
-                <div id="hero-center-content" class="relative flex items-center border-y border-color-dark p-2 h-64">
+                <div id="hero-center-content" class="relative flex items-center border-y border-color-dark p-2 h-80 md:h-64">
                     <h1 id="heading" class="heading-xl">
                         Startup websites that are out of this world.
                     </h1>
