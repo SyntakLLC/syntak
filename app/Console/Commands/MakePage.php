@@ -71,7 +71,7 @@ class MakePage extends Command
     protected function generateVueTemplate($vueFile): string
     {
         $fileName = str_replace(".vue", "", $vueFile);
-        return "<template>\n</template>\n\n<script>\nexport default {\n    name: \"{$fileName}\",\n}\n</script>";
+        return "<template>\n</template>\n\n<script>\nimport { Link } from '@inertiajs/vue3';\n\nexport default {\n    name: \"{$fileName}\",\n\n    components: {\n        Link\n    }\n}\n</script>";
     }
 
     protected function generateSingleControllerTemplate($pageName, $isAuth): string

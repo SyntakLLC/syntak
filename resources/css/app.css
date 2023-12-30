@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-[x-cloak] {
-    display: none;
+@layer components {
+    .bg-gradient {
+        background: radial-gradient(#f2fbff, #7dd3fb, #6d61ed);
+    }
+
+    .text-secondary {
+        @apply text-sm leading-6 text-gray-900 opacity-80;
+    }
+
+    .text-secondary-semibold {
+        @apply font-semibold text-secondary;
+    }
+
+    .heading-sm {
+        @apply text-lg tracking-tight font-semibold leading-6 text-gray-900;
+    }
+
+    .bg-primary {
+        @apply bg-[#100e25];
+    }
+    .bg-secondary {
+        @apply bg-[#18162e];
+    }
 }
