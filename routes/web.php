@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\LogoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,5 @@ Route::middleware([
 });
 
 Route::get('/', LandingController::class)->name('landing');
+
+Route::get('/logo', LogoController::class)->name('logo');
