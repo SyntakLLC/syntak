@@ -21,19 +21,33 @@
     <div class="w-screen h-4"/>
 
     <!-- TODO - Fill in main content here -->
-    <div id="content" class="bg-primary rounded-t-2xl w-screen h-screen transition-all">
-        <button @click="open = !open" class="text-white">click me </button>
+    <div id="content" class="relative bg-primary rounded-t-3xl w-screen h-screen transition">
+
+        <div id="menu-button-location" class="absolute top-8 right-8 z-50">
+            <PrimaryButton @click="open = !open">
+                {{ open ? 'Close' : 'Menu' }}
+                <XMarkIcon v-if="open" class="-ml-1 w-4 h-4" />
+                <Bars3Icon v-else class="w-4 h-4"/>
+            </PrimaryButton>
+        </div>
+
+        <slot />
+
     </div>
 </template>
 
 <script>
 import { Head, Link } from '@inertiajs/vue3';
+import { Bars3Icon, XMarkIcon } from '@heroicons/vue/20/solid';
 import NavigationBar from "@/Partials/NavigationBar.vue";
+import PrimaryButton from "@/Components/Buttons/PrimaryButton.vue";
 
 export default {
     name: "Landing",
 
     components: {
+        Bars3Icon, XMarkIcon,
+        PrimaryButton,
         NavigationBar,
         Head,
         Link

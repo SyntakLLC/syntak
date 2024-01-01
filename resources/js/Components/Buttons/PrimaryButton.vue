@@ -1,5 +1,5 @@
 <script setup>
-import BaseButton from "@/Components/Buttons/BaseButton";
+import BaseButton from "@/Components/Buttons/BaseButton.vue";
 
 defineProps({
     type: {
@@ -23,7 +23,7 @@ defineProps({
                 :loading="loading"
                 :class="[
                 disabled || loading ? 'cursor-not-allowed border-b-2 border-gray-300 bg-gray-400 hover:bg-gray-400 active:bg-gray-400' : 'cursor-pointer',
-                'primary-clickable flex justify-center text-white'
+                'text-gray-100 hover:bg-gray-700 bg-[#22223e] border border-color active:bg-gray-800'
             ]">
         <slot/>
     </BaseButton>

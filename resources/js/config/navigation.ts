@@ -4,6 +4,7 @@ export const recentProjects = [
     { name: 'Homexe', href: 'https://apps.apple.com/us/app/homexe-win/id1601072257', icon: 'https://i.imgur.com/mJER4bw.png' },
     { name: 'Impulse API', href: 'https://impulseapi.com', icon: 'https://i.imgur.com/cA8cMQh.png' },
     { name: 'MacDrone Media', href: 'https://apps.apple.com/us/app/cheat-sheet-re-photography/id1530704766', icon: 'https://i.imgur.com/yXsNFr3.jpg' },
+    { name: 'Athlete Pass', href: 'https://myathletepass.com', icon: 'https://i.imgur.com/anNA3f9.png' },
 ]
 export const socialLinks = [
     { name: 'LinkedIn', href: 'https://www.linkedin.com/company/syntak-llc/' },

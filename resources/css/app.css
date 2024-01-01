@@ -16,13 +16,113 @@
     }
 
     .heading-sm {
-        @apply text-lg tracking-tight font-semibold leading-6 text-gray-900;
+        @apply text-lg tracking-tight font-semibold leading-6;
+    }
+
+    .heading-lg {
+        @apply text-2xl font-semibold font-display tracking-tighter text-white;
+    }
+
+    .heading-xl {
+        @apply text-6xl lg:text-7xl font-semibold font-display tracking-tighter text-center bg-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .bg-primary {
         @apply bg-[#100e25];
     }
+
     .bg-secondary {
         @apply bg-[#18162e];
+    }
+
+    .border-color {
+        @apply border-[#35334c];
+    }
+}
+
+.border-pulse {
+    background: linear-gradient(to right, #6d61ed, #7dd3fb, #7dd3fb);
+    box-shadow: #6d61ed 0px 0px 12px, #6d61ed 0px 0px 3px,
+    #6d61ed 0px 0px 4px, #6d61ed 0px 0px 0px 1px inset;
+}
+
+.border-pulse {
+    border-radius: var(--border-pulse-radius);
+    padding: 0.5px;
+    overflow: hidden;
+    position: relative;
+    isolation: isolate;
+    background: linear-gradient(
+        to right,
+        #00000000,
+        #00000000,
+        #00000000
+    );
+    box-shadow: rgba(251, 192, 84, 0) 0px 0px 12px,
+    rgba(251, 192, 84, 0) 0px 0px 3px, rgba(251, 192, 84, 0) 0px 0px 4px,
+    rgba(246, 246, 113, 0) 0px 0px 0px 1px inset;
+    transition: box-shadow 0.2s ease 0s;
+}
+
+.border-pulse::before {
+    content: '';
+    display: block;
+    position: absolute;
+    inset: 0px;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 1;
+    transform-origin: 50% 50%;
+    background: radial-gradient(
+        50% 89.58% at 50% 0%,
+        #6d61ed 0%,
+        rgba(237, 66, 167, 0) 100%
+    );
+    animation: 4.2s linear 2.1s infinite normal none running kYteQr;
+}
+
+.border-pulse::after {
+    content: '';
+    display: block;
+    position: absolute;
+    inset: 0px;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 1;
+    transform-origin: 50% 50%;
+    background: radial-gradient(
+        50% 89.58% at 50% 0%,
+        #6d61ed 0%,
+        rgba(237, 66, 167, 0) 100%
+    );
+    animation: 4.2s linear 0s infinite normal none running kYteQr;
+}
+
+@keyframes kYteQr {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+    }
+    20% {
+        transform: translateX(50%) rotate(0deg);
+    }
+    30% {
+        transform: translateX(50%) rotate(90deg);
+    }
+    40% {
+        transform: translateX(50%) rotate(180deg);
+    }
+    60% {
+        transform: translateX(-50%) rotate(180deg);
+    }
+    70% {
+        transform: translateX(-50%) rotate(270deg);
+    }
+    80% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+    100% {
+        transform: translateX(0px) rotate(360deg);
     }
 }

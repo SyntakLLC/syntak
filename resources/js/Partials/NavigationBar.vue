@@ -18,7 +18,7 @@
                         <div class="-my-2">
                             <a v-for="item in recentProjects" :key="item.name" :href="item.href"
                                class="group flex items-center gap-x-2 py-2 text-secondary-semibold">
-                                <img class="w-4 h-4 rounded-full object-cover shadow-md" alt="Logo" :src="item.icon" />
+                                <img class="w-4 h-4 group-hover:w-5 group-hover:h-5 transition-all rounded-full object-cover shadow-md" alt="Logo" :src="item.icon" />
                                 {{ item.name }}
                                 <HoverArrow color="primary" class="opacity-0 group-hover:opacity-100" />
                             </a>

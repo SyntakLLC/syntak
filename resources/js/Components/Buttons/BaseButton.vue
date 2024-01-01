@@ -1,5 +1,5 @@
 <script setup>
-import Spinner from "@/Components/Progress/Spinner";
+import Spinner from "@/Components/Progress/Spinner.vue";
 
 defineProps({
     type: {
@@ -19,7 +19,7 @@ defineProps({
 
 <template>
     <button :type="type" :disabled="disabled || loading" :class="[
-            'text-center font-display font-bold inline-flex items-center px-6 py-2 rounded-full shadow font-semibold text-base tracking-normal'
+            'group inline-flex items-center px-4 py-1 gap-2 rounded-full font-semibold text-md hover:shadow-lg active:scale-[0.98] focus:outline-none focus:border-brand-800 focus:ring focus:ring-brand-800 disabled:opacity-25 transition-all duration-75'
         ]">
         <Spinner v-if="loading"/>
         <slot/>

@@ -1,20 +1,20 @@
 <template>
     <div class="z-0">
-        <div class="meteor-1 blur-sm"></div> <!-- used to be xs -->
-        <div class="meteor-2 blur-sm"></div>
-        <div class="meteor-3 blur-sm"></div> <!-- used to be xs -->
+        <div class="meteor-1 blur-xs"></div> <!-- used to be xs -->
+        <div class="meteor-2 blur-xs"></div>
+        <div class="meteor-3 blur-xs"></div> <!-- used to be xs -->
         <div class="meteor-4 blur-md"></div>
-        <div class="meteor-5 blur-sm"></div> <!-- used to be xs -->
+        <div class="meteor-5 blur-xs"></div> <!-- used to be xs -->
         <div class="meteor-6 blur-lg"></div>
-        <div class="meteor-7 blur-sm"></div> <!-- used to be xs -->
-                <div class="meteor-8 blur-sm"></div>
-                <div class="meteor-9 blur-sm"></div> <!-- used to be xs -->
+        <div class="meteor-7 blur-xs"></div> <!-- used to be xs -->
+                <div class="meteor-8 blur-xs"></div>
+                <div class="meteor-9 blur-xs"></div> <!-- used to be xs -->
                 <div class="meteor-10 blur-md"></div>
-                <div class="meteor-11 blur-sm"></div> <!-- used to be xs -->
+                <div class="meteor-11 blur-xs"></div> <!-- used to be xs -->
                 <div class="meteor-12 blur-lg"></div>
-                <div class="meteor-13 blur-sm"></div> <!-- used to be xs -->
-                <div class="meteor-14 blur-sm"></div>
-                <div class="meteor-15 blur-sm"></div> <!-- used to be xs -->
+                <div class="meteor-13 blur-xs"></div> <!-- used to be xs -->
+                <div class="meteor-14 blur-xs"></div>
+                <div class="meteor-15 blur-xs"></div> <!-- used to be xs -->
     </div>
 </template>
 
