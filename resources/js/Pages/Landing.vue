@@ -11,6 +11,10 @@
 
         <Testimonial />
 
+        <CallToAction />
+
+        <Footer />
+
     </AppLayout>
 </template>
 
@@ -20,11 +24,15 @@ import AppLayout from "@/Layouts/AppLayout.vue";
 import Hero from "@/Partials/Landing/Hero.vue";
 import NotedlyDisplay from "@/Partials/Landing/NotedlyDisplay.vue";
 import Testimonial from "@/Partials/Landing/Testimonial.vue";
+import CallToAction from "@/Partials/Landing/CallToAction.vue";
+import Footer from "@/Partials/Footer.vue";
 
 export default {
     name: "Landing",
 
     components: {
+        Footer,
+        CallToAction,
         Testimonial,
         NotedlyDisplay,
         Hero,

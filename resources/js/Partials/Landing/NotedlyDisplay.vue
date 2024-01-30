@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-full bg-[#18162e] space-y-16 py-16 overflow-hidden">
+    <div class="relative w-full bg-secondary space-y-16 py-16 overflow-hidden">
         <!-- bg-gradient-to-b from-[#18162e] to-[#100e25] -->
         <Meteors />
         <Stars class="opacity-50" />
@@ -107,6 +107,22 @@ export default {
             if (scaleValue > 0) {
                 this.element.scale = scaleValue + '%';
             }
+            //
+            //
+            // const element2 = document.getElementById('notedly-end');
+            // const height2 = element2.offsetTop - window.scrollY;
+            // const rotationValue2 = 10 + ((height2) / 50);
+            // const scaleValue2 = height2 / 250;
+            //
+            // if (rotationValue2 > 0) {
+            //     this.rotation = rotationValue2;
+            // } else {
+            //     this.rotation = 0;
+            // }
+            //
+            // if (scaleValue2 > 0) {
+            //     this.element.scale = scaleValue2 + '%';
+            // }
         },
     },
 }
