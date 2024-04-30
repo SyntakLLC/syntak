@@ -1,5 +1,5 @@
 <template>
-    <div class="relative overflow-hidden">
+    <div class="relative overflow-hidden border-b border-color">
         <Stars class="absolute w-screen opacity-50 z-10"/>
         <div id="logo" class="absolute top-8 left-8 z-50">
             <Logo />
@@ -8,7 +8,7 @@
         <div class="absolute mt-48 border-y border-color w-full h-80 md:h-64" />
 
         <!-- Center of the hero -->
-        <div class="relative max-w-2xl mx-auto md:border-x border-color h-full md:min-h-screen pb-16 md:pb-0">
+        <div class="relative max-w-2xl mx-auto md:border-x border-color h-full pb-16 md:pb-40">
 
             <VerticalBars />
 
@@ -34,11 +34,11 @@
         </div>
 
         <!-- Planet -->
-        <div id="planet" class="hidden-mobile z-0">
-            <div class="absolute w-[200vw] aspect-square blur-[50px] top-2/3 -left-full">
-                <div class="w-[200vw] absolute aspect-square rounded-full bg-white glow-purple"/>
-            </div>
-        </div>
+<!--        <div id="planet" class="hidden-mobile z-0">-->
+<!--            <div class="absolute w-[200vw] aspect-square blur-[50px] top-2/3 -left-full">-->
+<!--                <div class="w-[200vw] absolute aspect-square rounded-full bg-white glow-purple"/>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </template>
 

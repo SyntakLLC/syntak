@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
 
         <!-- Scripts -->
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         @routes
         @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
         @inertiaHead

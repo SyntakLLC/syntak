@@ -2,7 +2,7 @@
     <div class="relative w-full bg-secondary space-y-16 py-16 overflow-hidden">
         <!-- bg-gradient-to-b from-[#18162e] to-[#100e25] -->
         <Meteors />
-        <Stars class="opacity-50" />
+        <Stars class="opacity-50 scale-x-[-100%]" />
 
         <div>
             <div class="heading-xl pb-6 text-5xl">First impressions last.</div>
@@ -10,7 +10,8 @@
         </div>
 
         <div class="w-full px-24 text-white">
-            <div id="notedly" class="relative rounded-3xl overflow-hidden glow-purple-large" :style="{ transform: `perspective(500px) rotateX(${rotation}deg)` }">
+            <div id="notedly" class="relative rounded-3xl overflow-hidden glow-purple-large">
+<!--            <div id="notedly" class="relative rounded-3xl overflow-hidden glow-purple-large" :style="{ transform: `perspective(500px) rotateX(${rotation}deg)` }">-->
                 <div class="border-pulse rounded-3xl">
                     <img src="https://i.imgur.com/vkLoRx8.png"
                          class="relative object-cover rounded-3xl w-full h-full z-10"
@@ -72,11 +73,11 @@ export default {
     components: {HoverArrow, Stars, Meteors, Link},
 
     created () {
-        window.addEventListener('scroll', this.handleScroll);
+        // window.addEventListener('scroll', this.handleScroll);
     },
 
     unmounted () {
-        window.removeEventListener('scroll', this.handleScroll);
+        // window.removeEventListener('scroll', this.handleScroll);
     },
 
     setup() {
@@ -106,6 +107,7 @@ export default {
 
             if (scaleValue > 0) {
                 this.element.scale = scaleValue + '%';
+                element.style.transform = `perspective(500px) rotateX(${rotationValue}deg)`;
             }
             //
             //

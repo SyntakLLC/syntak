@@ -40,6 +40,10 @@
     .border-color {
         @apply border-[#35334c];
     }
+
+    .hidden-mobile {
+        @apply hidden md:block;
+    }
 }
 
 .border-pulse {

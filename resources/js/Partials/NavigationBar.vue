@@ -16,7 +16,7 @@
                     <h3 class="heading-sm font-display">Recent Work</h3>
                     <div class="mt-6 flow-root">
                         <div class="-my-2">
-                            <a v-for="item in recentProjects" :key="item.name" :href="item.href"
+                            <a v-for="item in recentProjects" :key="item.name" :href="item.href" target="_blank"
                                class="group flex items-center gap-x-2 py-2 text-secondary-semibold">
                                 <img class="w-4 h-4 group-hover:w-5 group-hover:h-5 transition-all rounded-full object-cover shadow-md" alt="Logo" :src="item.icon" />
                                 {{ item.name }}
@@ -30,7 +30,7 @@
                     <h3 class="heading-sm font-display">Social</h3>
                     <div class="mt-6 flow-root">
                         <div class="-my-2">
-                            <a v-for="item in socialLinks" :key="item.name" :href="item.href"
+                            <a v-for="item in socialLinks" :key="item.name" :href="item.href" target="_blank"
                                class="group flex items-center gap-x-2 py-2 text-secondary-semibold">
                                 {{ item.name }}
                                 <HoverArrow color="primary" class="opacity-0 group-hover:opacity-100" />
