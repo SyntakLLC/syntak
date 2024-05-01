@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LogoController;
-use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,5 +25,3 @@ Route::middleware([
 Route::get('/', LandingController::class)->name('landing');
 
 Route::get('/logo', LogoController::class)->name('logo');
-
-Route::get('/test', TestController::class)->name('test');

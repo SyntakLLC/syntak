@@ -25,7 +25,7 @@
             </div>
 
             <div id="button-section" class="relative h-full w-full text-center text-md text-white py-8 z-50">
-                <SecondaryButton class="mr-2">
+                <SecondaryButton @click="scrollToProjects" class="mr-2">
                     Our work
                     <BriefcaseIcon class="w-4 h-4"/>
                 </SecondaryButton>
@@ -61,6 +61,17 @@ export default {
         Logo,
         Stars,
         BriefcaseIcon
+    },
+
+    methods: {
+        scrollToProjects() {
+            const projectsHeading = document.querySelector('h6');
+            console.log(projectsHeading);
+            console.log(projectsHeading.textContent.includes('More projects'));
+            if (projectsHeading && projectsHeading.textContent.includes('More projects')) {
+                projectsHeading.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
     },
 
     computed: {

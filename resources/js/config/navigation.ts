@@ -14,25 +14,32 @@ export const socialLinks = [
 export const recentPosts = [
     {
         id: 1,
-        title: 'Boost your conversion rate',
-        href: '#',
-        date: 'Mar 16, 2023',
-        datetime: '2023-03-16',
-        category: { title: 'Marketing', href: '#' },
-        imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-        description:
-            'Et et dolore officia quis nostrud esse aute cillum irure do esse. Eiusmod ad deserunt cupidatat est magna Lorem.',
-    },
-    {
-        id: 2,
-        title: 'How to use search engine optimization to drive sales',
-        href: '#',
-        date: 'Mar 10, 2023',
+        title: 'Notedly hits 1,000,000',
+        href: 'https://www.linkedin.com/feed/update/urn:li:activity:7116570912056827904/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7116570912056827904%29',
+        date: 'Apr 2023',
         datetime: '2023-03-10',
         category: { title: 'Sales', href: '#' },
         imageUrl:
-            'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80',
-        description: 'Optio cum necessitatibus dolor voluptatum provident commodi et.',
+            'https://i.imgur.com/4xgC5Qy.jpeg',
+        description: 'Finals season has been great for Notedly. In the past 30 days, we’ve had:\n' +
+            '\n' +
+            '• 5,000 active users \n' +
+            '• 4,000 new chats with the Notedly Assistant...',
+    },
+    {
+        id: 2,
+        title: 'Growth Update',
+        href: 'https://www.linkedin.com/feed/update/urn:li:activity:7062259678046527488/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7062259678046527488%29',
+        date: 'Sep 2023',
+        datetime: '2023-03-16',
+        category: { title: 'Marketing', href: '#' },
+        imageUrl:
+            'https://i.imgur.com/pVyI8NN.jpeg',
+        description:
+            'How’s the start of the semester going?\n' +
+            '\n' +
+            'For Notedly, it’s been amazing!\n' +
+            '\n' +
+            '1. We crossed an important milestone...',
     },
 ]

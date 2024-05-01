@@ -55,10 +55,10 @@
                             <time :datetime="post.datetime" class="text-secondary">
                                 {{ post.date }}
                             </time>
-                            <a :href="post.category.href"
-                               class="relative z-10 rounded-full bg-white/50 px-2.5 py-1 text-xs font-medium text-gray-600 hover:bg-gray-100">
-                                {{ post.category.title }}
-                            </a>
+<!--                            <a :href="post.category.href"-->
+<!--                               class="relative z-10 rounded-full bg-white/50 px-2.5 py-1 text-xs font-medium text-gray-600 hover:bg-gray-100">-->
+<!--                                {{ post.category.title }}-->
+<!--                            </a>-->
                         </div>
                         <h4 class="mt-2 text-secondary-semibold">
                             <a :href="post.href">

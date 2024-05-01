@@ -29,9 +29,9 @@
             </div>
 
             <div class="w-full h-2/3 p-24 space-y-10 my-10">
-                <div class="heading-lg">
+                <h6 class="heading-lg">
                     More projects
-                </div>
+                </h6>
 
                 <div class="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-16">
                     <div v-for="project in projects.slice(0, 3)"
@@ -50,9 +50,10 @@
                             {{ project.description }}
                         </span>
 
-                        <span class="heading-xl text-left text-2xl">
-                            Read &rarr;
-                        </span>
+                        <a :href="project.href" target="_blank"
+                           class="heading-xl text-left text-2xl">
+                            View &rarr;
+                        </a>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,11 @@
 <template>
-    <PrimaryButton v-if="dark" @click="openCalendlyModal">
-        Contact Us
-        <HoverArrow />
-    </PrimaryButton>
-    <SecondaryButton v-else @click="openCalendlyModal">Contact Us</SecondaryButton>
+    <a href="https://calendly.com/syntak/interested-in-a-website-or-app" target="_blank">
+        <PrimaryButton v-if="dark">
+            Contact Us
+            <HoverArrow />
+        </PrimaryButton>
+        <SecondaryButton v-else>Contact Us</SecondaryButton>
+    </a>
 </template>
 
 <script>
