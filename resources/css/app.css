@@ -24,7 +24,7 @@
     }
 
     .heading-xl {
-        @apply text-6xl lg:text-7xl font-semibold font-display tracking-tighter text-center bg-gradient;
+        @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold font-display tracking-tighter text-center bg-gradient;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }

@@ -1,41 +1,41 @@
 <template>
-    <div class="relative w-full bg-secondary space-y-16 py-16 overflow-hidden">
+    <div class="relative w-full bg-secondary space-y-16 pb-8 md:py-16 overflow-hidden">
         <!-- bg-gradient-to-b from-[#18162e] to-[#100e25] -->
         <Meteors />
         <Stars class="opacity-50 scale-x-[-100%]" />
 
         <div>
-            <div class="heading-xl pb-6 text-5xl">First impressions last.</div>
-            <div class="heading-sm text-center text-white">This first impression by us landed 50,000+ users and over $70,000 ARR.</div>
+            <div class="heading-xl pb-6 md:text-4xl lg:text-5xl">First impressions last.</div>
+            <div class="heading-sm text-center text-white">This first impression by us landed 80,000+ users and over $70,000 ARR.</div>
         </div>
 
-        <div class="w-full px-24 text-white">
+        <div class="w-full px-4 md:px-8 lg:px-24 text-white">
             <div id="notedly" class="relative rounded-3xl overflow-hidden glow-purple-large">
 <!--            <div id="notedly" class="relative rounded-3xl overflow-hidden glow-purple-large" :style="{ transform: `perspective(500px) rotateX(${rotation}deg)` }">-->
                 <div class="border-pulse rounded-3xl">
-                    <img src="https://i.imgur.com/vkLoRx8.png"
+                    <img src="../../../img/notedly.png"
                          class="relative object-cover rounded-3xl w-full h-full z-10"
                          alt="Notedly AI User Interface" />
                 </div>
             </div>
         </div>
 
-        <div class="bg-gradient-to-b from-transparent via-[#18162e] to-[#18162e] w-full absolute bottom-0 h-screen">
-            <div class="w-full h-1/3 flex items-end p-24">
+        <div class="bg-gradient-to-b from-transparent via-[#18162e] to-[#18162e] w-full lg:absolute lg:bottom-0 lg:h-screen">
+            <div class="hidden lg:block w-full lg:h-1/3 flex items-end p-24">
 <!--                <Link :href="route('landing')"-->
 <!--                      class="heading-xl text-4xl mx-auto pt-24">-->
 <!--                    Read the full story &rarr;-->
 <!--                </Link>-->
             </div>
 
-            <div class="w-full h-2/3 p-24 space-y-10 my-10">
+            <div class="w-full h-2/3 px-6 md:px-8 lg:p-24 space-y-10 lg:my-10">
                 <h6 class="heading-lg">
                     More projects
                 </h6>
 
-                <div class="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-16">
+                <div class="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-16">
                     <div v-for="project in projects.slice(0, 3)"
-                         class=" w-full rounded-2xl flex flex-col gap-2 p-6">
+                         class=" w-full rounded-2xl flex flex-col gap-2 py-6 md:p-6">
                             <img :src="project.icon"
                                  class="w-8 h-8 rounded-full"
                                  :alt="`${project.name} Logo`" />

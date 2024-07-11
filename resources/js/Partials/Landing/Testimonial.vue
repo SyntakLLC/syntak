@@ -5,7 +5,7 @@
             <VerticalBars id="bars-2" class="z-0"/>
 
             <div class="relative py-20 px-6">
-                <div class="heading-xl py-4 text-5xl">
+                <div class="heading-xl py-4 md:text-4xl lg:text-5xl">
                     "You won’t find more readily accessible, reliable, and diligent web developers."
                 </div>
                 <div class="heading-lg pt-6 text-center">Harry Eppers, Athlete Pass</div>

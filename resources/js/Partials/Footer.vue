@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-full bg-gradient overflow-hidden">
+    <div class="relative w-full bg-primary overflow-hidden">
 <!--        <div class="mx-auto max-w-7xl overflow-hidden px-6 py-14 sm:py-18 lg:px-8">-->
 <!--            <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">-->
 <!--                <div v-for="item in navigation.main" :key="item.name" class="pb-6">-->
@@ -14,7 +14,7 @@
 <!--            </div>-->
 <!--            <p class="mt-10 text-center text-xs leading-5 text-black/50">&copy; {{ currentYear }} Syntak, LLC. All rights reserved.</p>-->
 <!--        </div>-->
-        <p class="text-center py-10 text-xs tracking-widest uppercase font-bold leading-5 text-black/70">&copy; {{ currentYear }} Syntak, LLC. All rights reserved.</p>
+        <p class="text-center heading-xl py-10 text-lg">&copy; {{ currentYear }} Syntak, LLC. All rights reserved.</p>
     </div>
 </template>
 
@@ -118,5 +118,8 @@ export default {
 </script>
 
 <style scoped>
-
+.bakwas {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 </style>

@@ -5,26 +5,27 @@
             <Logo />
         </div>
 
-        <div class="absolute mt-48 border-y border-color w-full h-80 md:h-64" />
+        <div class="hidden-mobile absolute mt-48 border-y border-color w-full h-80 md:h-64" />
 
         <!-- Center of the hero -->
         <div class="relative max-w-2xl mx-auto md:border-x border-color h-full pb-16 md:pb-40">
 
             <VerticalBars />
 
-            <div id="datetime" class="relative h-48 w-full text-secondary-semibold text-center text-white pt-8">
-                <span class="hidden-mobile">
-                    {{ dateTime }}
-                </span>
+            <div id="datetime" class="hidden-mobile relative h-48 w-full text-secondary-semibold text-center text-white pt-8">
+                {{ dateTime }}
             </div>
 
-            <div id="hero-center-content" class="relative flex items-center border-y border-color p-2 h-80 md:h-64">
-                <h1 id="heading" class="heading-xl">
-                    Startup websites that are out of this world.
-                </h1>
+            <div class="pt-28 md:pt-0">
+                <div id="hero-center-content" class="relative flex items-center border-y border-color px-4 py-12 my-12 md:my-0 md:py-0 h-auto md:h-64">
+                    <h1 id="heading" class="heading-xl text-5xl md:text-6xl lg:text-7xl">
+<!--                        Startup websites that are out of this world.-->
+                        Bringing your company into hyperspace with AI.
+                    </h1>
+                </div>
             </div>
 
-            <div id="button-section" class="relative h-full w-full text-center text-md text-white py-8 z-50">
+            <div id="button-section" class="relative h-full w-full text-center text-md text-white pt-8 md:py-8 z-50">
                 <SecondaryButton @click="scrollToProjects" class="mr-2">
                     Our work
                     <BriefcaseIcon class="w-4 h-4"/>
