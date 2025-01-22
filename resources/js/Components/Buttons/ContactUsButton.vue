@@ -1,5 +1,8 @@
 <template>
-    <a href="https://calendly.com/syntak/interested-in-a-website-or-app" target="_blank">
+    <a
+        href="https://calendly.com/syntak/interested-in-a-website-or-app"
+        target="_blank"
+    >
         <PrimaryButton v-if="dark">
             Contact Us
             <HoverArrow />
@@ -9,29 +12,29 @@
 </template>
 
 <script>
-import SecondaryButton from "@/Components/buttons/SecondaryButton.vue";
+import SecondaryButton from "@/Components/Buttons/SecondaryButton.vue";
 import PrimaryButton from "@/Components/Buttons/PrimaryButton.vue";
 import HoverArrow from "@/Components/Decoration/HoverArrow.vue";
 
 export default {
     name: "ContactUsButton",
-    components: {HoverArrow, PrimaryButton, SecondaryButton},
+    components: { HoverArrow, PrimaryButton, SecondaryButton },
     props: {
         dark: {
             type: Boolean,
             default: false,
-        }
+        },
     },
 
     methods: {
         openCalendlyModal() {
-            Calendly.initPopupWidget({url: 'https://calendly.com/syntak/interested-in-a-website-or-app'});
+            Calendly.initPopupWidget({
+                url: "https://calendly.com/syntak/interested-in-a-website-or-app",
+            });
             return false;
-        }
-    }
-}
+        },
+    },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
