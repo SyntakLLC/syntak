@@ -23,6 +23,7 @@
     "dependencies": {
         "@headlessui/vue": "^1.7.16",
         "@heroicons/vue": "^2.1.1",
-        "moment": "^2.30.1"
+        "moment": "^2.30.1",
+        "swiper": "^11.2.1"
     }
 }

@@ -41,20 +41,24 @@
                 id="button-section"
                 class="relative px-4 h-full w-full text-center flex justify-start sm:justify-center text-md text-white md:py-8 z-50"
             >
-                <SecondaryButton @click="scrollToProjects" class="mr-2">
+                <!-- <SecondaryButton @click="scrollToProjects" class="mr-2">
                     Our work
                     <BriefcaseIcon class="w-4 h-4" />
-                </SecondaryButton>
-                <ContactUsButton :dark="true" />
+                </SecondaryButton> -->
+                <ContactUsButton />
             </div>
         </div>
 
         <!-- Planet -->
-        <!--        <div id="planet" class="hidden-mobile z-0">-->
-        <!--            <div class="absolute w-[200vw] aspect-square blur-[50px] top-2/3 -left-full">-->
-        <!--                <div class="w-[200vw] absolute aspect-square rounded-full bg-white glow-purple"/>-->
-        <!--            </div>-->
-        <!--        </div>-->
+        <div id="planet" class="hidden-mobile z-0">
+            <div
+                class="absolute w-[200vw] aspect-square blur-[50px] top-2/3 -left-full"
+            >
+                <div
+                    class="w-[200vw] absolute aspect-square rounded-full bg-white glow-purple"
+                />
+            </div>
+        </div>
     </div>
 </template>
 

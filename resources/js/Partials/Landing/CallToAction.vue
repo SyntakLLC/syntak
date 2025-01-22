@@ -121,7 +121,7 @@ export default {
             const projectsHeading = document.querySelector("h6");
             if (
                 projectsHeading &&
-                projectsHeading.textContent.includes("More projects")
+                projectsHeading.textContent.includes("Our projects")
             ) {
                 projectsHeading.scrollIntoView({ behavior: "smooth" });
             }

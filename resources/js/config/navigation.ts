@@ -1,13 +1,15 @@
+import radarLogo from "../../img/radar-logo.png";
+
 export const recentProjects = [
+    {
+        name: "Radar Jobs",
+        href: "https://useradar.ai",
+        icon: radarLogo,
+    },
     {
         name: "Notedly AI",
         href: "https://notedly.ai",
         icon: "https://i.imgur.com/ifyXr9h.png",
-    },
-    {
-        name: "AI Papi",
-        href: "https://aipapi.io",
-        icon: "https://i.imgur.com/eVJFA9h.png",
     },
     {
         name: "Homexe",
@@ -24,11 +26,18 @@ export const recentProjects = [
         href: "https://apps.apple.com/us/app/cheat-sheet-re-photography/id1530704766?platform=iphone",
         icon: "https://i.imgur.com/yXsNFr3.jpg",
     },
-    {
-        name: "Athlete Pass",
-        href: "https://myathletepass.com",
-        icon: "https://i.imgur.com/anNA3f9.png",
-    },
+    // {
+    //     name: "AI Papi",
+    //     subtitle: "Preview not available.",
+    //     href: "/",
+    //     icon: "https://i.imgur.com/eVJFA9h.png",
+    // },
+    // {
+    //     name: "Athlete Pass",
+    //     subtitle: "Preview not available.",
+    //     href: "/",
+    //     icon: "https://i.imgur.com/anNA3f9.png",
+    // },
 ];
 export const socialLinks = [
     { name: "LinkedIn", href: "https://www.linkedin.com/company/syntak-llc/" },

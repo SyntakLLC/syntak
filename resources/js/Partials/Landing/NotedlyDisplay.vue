@@ -11,7 +11,7 @@
                 First impressions last.
             </div>
             <div class="heading-sm text-center text-white">
-                This first impression by us landed 90,000+ users and over
+                This first impression by Syntak landed 90,000+ users and over
                 $70,000 ARR.
             </div>
         </div>
@@ -44,7 +44,7 @@
             <div class="hidden lg:block w-full lg:h-1/3 items-end p-24"></div>
 
             <div class="w-full h-2/3 px-6 md:px-8 lg:p-24 space-y-10 lg:my-10">
-                <h6 class="heading-lg">More projects</h6>
+                <h6 class="heading-lg">Our projects</h6>
 
                 <div
                     class="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-16"
@@ -55,7 +55,7 @@
                     >
                         <img
                             :src="project.icon"
-                            class="w-8 h-8 rounded-full"
+                            class="w-8 h-8 rounded-full object-contain"
                             :alt="`${project.name} Logo`"
                         />
 
