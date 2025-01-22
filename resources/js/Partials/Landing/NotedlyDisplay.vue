@@ -6,11 +6,11 @@
         <Meteors />
         <Stars class="opacity-50 scale-x-[-100%]" />
 
-        <div>
+        <div class="px-4">
             <div class="heading-xl pb-6 md:text-4xl lg:text-5xl">
                 First impressions last.
             </div>
-            <div class="heading-sm text-center text-white">
+            <div class="heading-sm text-left md:text-center text-white">
                 This first impression by Syntak landed 90,000+ users and over
                 $70,000 ARR.
             </div>

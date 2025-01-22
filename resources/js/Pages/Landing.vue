@@ -7,9 +7,9 @@
          -->
         <Hero />
 
-        <div class="relative w-screen overflow-hidden py-8">
+        <!-- <div class="relative w-screen overflow-hidden py-8">
             <ProjectCarousel />
-        </div>
+        </div> -->
 
         <NotedlyDisplay />
 

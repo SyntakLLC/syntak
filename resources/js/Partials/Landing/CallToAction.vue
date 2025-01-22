@@ -25,17 +25,19 @@
             </div>
         </div>
 
-        <div class="relative h-full max-w-5xl px-4 mx-auto">
+        <div
+            class="relative h-full max-w-5xl px-4 mx-auto text-left md:text-center"
+        >
             <TwinklingStars />
 
             <div class="heading-xl pb-6 md:text-4xl lg:text-5xl">
                 Once-in-a-lifetime ideas
             </div>
-            <div class="heading-sm text-center text-white">
+            <div class="heading-sm text-white">
                 Deserve once-in-a-lifetime websites.
             </div>
             <div
-                class="max-w-lg mx-auto mt-5 text-secondary text-white leading-relaxed text-center"
+                class="max-w-lg mx-auto mt-5 text-secondary text-white leading-relaxed"
             >
                 Syntak has experience growing all kinds of startups - from
                 launching several of our own to helping existing platforms build
@@ -53,7 +55,8 @@
                         class="text-2xl lg:text-4xl font-semibold font-display tracking-tighter !text-center text-white"
                     >
                         Whether your product needs
-                        <span class="heading-xl text-2xl lg:text-4xl"
+                        <span
+                            class="heading-xl text-2xl lg:text-4xl tracking-normal"
                             >AI, payments, API's</span
                         >, or more, we've got you covered.
                     </span>

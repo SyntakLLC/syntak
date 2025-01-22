@@ -9,7 +9,7 @@
             ]"
         >
             <span
-                class="z-50 relative text-white font-[Lexend] font-bold text-xl sm:text-2xl"
+                class="z-50 relative text-white font-[MarvinVisions] font-bold text-xl sm:text-2xl"
             >
                 Syntak
             </span>
@@ -24,7 +24,7 @@
             ]"
         >
             <span
-                class="z-50 relative text-white font-[Lexend] skew-y-3 font-bold text-3xl"
+                class="z-50 relative text-white font-[MarvinVisions] skew-y-3 font-bold text-3xl"
                 >Syntak</span
             >
         </Link>
@@ -36,7 +36,7 @@
         >
             <Gradient class="block absolute -inset-1" />
             <span
-                class="-ml-1 z-50 relative text-white font-[Lexend] font-bold text-xl sm:text-2xl"
+                class="-ml-1 z-50 relative text-white font-[MarvinVisions] font-bold text-xl sm:text-2xl"
             >
                 Syntak
             </span>
