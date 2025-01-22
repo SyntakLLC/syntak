@@ -25,8 +25,10 @@
                         :src="project.backgroundImage"
                     ></img> -->
 
-                    <div class="text-white text-center pb-2">
-                        <h2 class="text-4xl font-display tracking-tight mb-4">
+                    <div class="text-white text-left md:text-center pb-2">
+                        <h2
+                            class="text-2xl sm:text-3xl md:text-4xl font-display tracking-tight mb-4"
+                        >
                             {{ project.title }}
                         </h2>
                         <p
