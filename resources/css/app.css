@@ -44,6 +44,10 @@
     .hidden-mobile {
         @apply hidden md:block;
     }
+
+    .text-4\.5xl {
+        @apply text-[2.625rem] leading-[1];  /* 42px font size with 1.2 line height */
+    }
 }
 
 .border-pulse {

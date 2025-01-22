@@ -25,11 +25,11 @@
             <div class="pt-28 md:pt-0">
                 <div
                     id="hero-center-content"
-                    class="relative flex items-center border-y border-color px-4 py-12 my-12 md:my-0 md:py-0 h-auto md:h-64"
+                    class="relative flex items-center sm:border-b sm:border-t border-color px-4 py-6 mb-6 md:my-0 md:py-0 h-auto md:h-64"
                 >
                     <h1
                         id="heading"
-                        class="heading-xl text-5xl md:text-6xl lg:text-7xl"
+                        class="heading-xl text-4.5xl md:text-6xl lg:text-7xl text-left sm:text-center"
                     >
                         Startup websites that are out of this world.
                         <!-- Bringing your company into hyperspace with AI. -->
@@ -39,7 +39,7 @@
 
             <div
                 id="button-section"
-                class="relative h-full w-full text-center text-md text-white pt-8 md:py-8 z-50"
+                class="relative px-4 h-full w-full text-center flex justify-start sm:justify-center text-md text-white md:py-8 z-50"
             >
                 <SecondaryButton @click="scrollToProjects" class="mr-2">
                     Our work
@@ -82,8 +82,6 @@ export default {
     methods: {
         scrollToProjects() {
             const projectsHeading = document.querySelector("h6");
-            console.log(projectsHeading);
-            console.log(projectsHeading.textContent.includes("More projects"));
             if (
                 projectsHeading &&
                 projectsHeading.textContent.includes("More projects")

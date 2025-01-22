@@ -1,8 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CaseStudy\AiPapiCaseStudyController;
+use App\Http\Controllers\CaseStudy\NotedlyCaseStudyController;
+use App\Http\Controllers\CaseStudy\RadarCaseStudyController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LogoController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +26,11 @@ Route::middleware([
 });
 
 Route::get('/', LandingController::class)->name('landing');
+
+Route::prefix('case-study')->group(function () {
+    Route::get('/notedly', NotedlyCaseStudyController::class)->name('case-study.notedly');
+    Route::get('/aipapi', AiPapiCaseStudyController::class)->name('case-study.aipapi');
+    Route::get('/radar', RadarCaseStudyController::class)->name('case-study.radar');
+});
 
 Route::get('/logo', LogoController::class)->name('logo');

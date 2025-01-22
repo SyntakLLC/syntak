@@ -119,8 +119,6 @@ export default {
 
         scrollToProjects() {
             const projectsHeading = document.querySelector("h6");
-            console.log(projectsHeading);
-            console.log(projectsHeading.textContent.includes("More projects"));
             if (
                 projectsHeading &&
                 projectsHeading.textContent.includes("More projects")

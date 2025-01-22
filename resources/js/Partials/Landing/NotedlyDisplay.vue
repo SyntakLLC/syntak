@@ -17,11 +17,17 @@
         </div>
 
         <div class="w-full px-4 md:px-8 lg:px-24 text-white">
+            <!-- <div
+                id="notedly"
+                class="relative rounded-3xl overflow-hidden glow-purple-large"
+            > -->
             <div
                 id="notedly"
                 class="relative rounded-3xl overflow-hidden glow-purple-large"
+                :style="{
+                    transform: `perspective(500px) rotateX(${rotation}deg)`,
+                }"
             >
-                <!--            <div id="notedly" class="relative rounded-3xl overflow-hidden glow-purple-large" :style="{ transform: `perspective(500px) rotateX(${rotation}deg)` }">-->
                 <div class="border-pulse rounded-3xl">
                     <img
                         src="../../../img/notedly.png"
@@ -90,11 +96,11 @@ export default {
     components: { HoverArrow, Stars, Meteors, Link },
 
     created() {
-        // window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener("scroll", this.handleScroll);
     },
 
     unmounted() {
-        // window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener("scroll", this.handleScroll);
     },
 
     setup() {
@@ -112,6 +118,7 @@ export default {
     methods: {
         handleScroll() {
             const element = document.getElementById("notedly");
+            if (!element) return;
             const height = element.offsetTop - window.scrollY;
             const rotationValue = 10 + height / 50;
             const scaleValue = height / 250;
@@ -123,24 +130,23 @@ export default {
             }
 
             if (scaleValue > 0) {
-                this.element.scale = scaleValue + "%";
+                element.scale = scaleValue + "%";
                 element.style.transform = `perspective(500px) rotateX(${rotationValue}deg)`;
             }
-            //
-            //
-            // const element2 = document.getElementById('notedly-end');
+
+            // const element2 = document.getElementById("notedly-end");
             // const height2 = element2.offsetTop - window.scrollY;
-            // const rotationValue2 = 10 + ((height2) / 50);
+            // const rotationValue2 = 10 + height2 / 50;
             // const scaleValue2 = height2 / 250;
-            //
+
             // if (rotationValue2 > 0) {
             //     this.rotation = rotationValue2;
             // } else {
             //     this.rotation = 0;
             // }
-            //
+
             // if (scaleValue2 > 0) {
-            //     this.element.scale = scaleValue2 + '%';
+            //     this.element.scale = scaleValue2 + "%";
             // }
         },
     },
