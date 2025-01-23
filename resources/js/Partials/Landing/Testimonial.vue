@@ -8,7 +8,7 @@
                     "You won’t find more readily accessible, reliable, and
                     diligent web developers."
                 </div>
-                <div class="heading-lg pt-6 text-center">
+                <div class="heading-lg pt-6 text-center-desktop">
                     Harry Eppers, Athlete Pass
                 </div>
             </div>

@@ -10,7 +10,7 @@
             <div class="heading-xl pb-6 md:text-4xl lg:text-5xl">
                 First impressions last.
             </div>
-            <div class="heading-sm text-left md:text-center text-white">
+            <div class="heading-sm text-center-desktop text-white">
                 This first impression by Syntak landed 90,000+ users and over
                 $70,000 ARR.
             </div>

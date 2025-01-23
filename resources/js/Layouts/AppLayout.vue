@@ -23,7 +23,7 @@
     <!-- TODO - Fill in main content here -->
     <div
         id="content"
-        class="relative bg-primary rounded-t-3xl w-screen transition shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]"
+        class="relative min-h-screen bg-primary rounded-t-3xl w-screen overflow-hidden transition shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]"
     >
         <div id="menu-button-location" class="absolute top-8 right-8 z-50">
             <PrimaryButton @click="open = !open">

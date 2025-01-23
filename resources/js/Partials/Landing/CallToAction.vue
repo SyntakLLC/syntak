@@ -25,9 +25,7 @@
             </div>
         </div>
 
-        <div
-            class="relative h-full max-w-5xl px-4 mx-auto text-left md:text-center"
-        >
+        <div class="relative h-full max-w-5xl px-4 mx-auto text-center-desktop">
             <TwinklingStars />
 
             <div class="heading-xl pb-6 md:text-4xl lg:text-5xl">

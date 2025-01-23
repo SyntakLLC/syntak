@@ -25,7 +25,7 @@
                         :src="project.backgroundImage"
                     ></img> -->
 
-                    <div class="text-white text-left md:text-center pb-2">
+                    <div class="text-white text-center-desktop pb-2">
                         <h2
                             class="text-2xl sm:text-3xl md:text-4xl font-display tracking-tight mb-4"
                         >

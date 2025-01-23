@@ -12,6 +12,14 @@
         background: radial-gradient(#f2fbff, #7dd3fb, #6d61ed);
     }
 
+    .text-center-desktop {
+        @apply text-left md:text-center;
+    }
+
+    .text-secondary-light {
+        @apply text-sm leading-6 text-white/80;
+    }
+
     .text-secondary {
         @apply text-sm leading-6 text-gray-900 opacity-80;
     }
@@ -25,11 +33,11 @@
     }
 
     .heading-lg {
-        @apply text-2xl font-semibold font-display tracking-tighter text-white;
+        @apply text-xl md:text-2xl font-semibold font-display tracking-tighter text-white;
     }
 
     .heading-xl {
-        @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold font-[MarvinVisions] text-left md:text-center bg-gradient;
+        @apply text-4xl sm:text-4.5xl md:text-6xl lg:text-7xl font-semibold font-[MarvinVisions] text-center-desktop bg-gradient;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-shadow: 0 0 20px rgba(125, 211, 251, 0.3), 0 0 40px rgba(109, 97, 237, 0.2);

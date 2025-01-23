@@ -29,7 +29,7 @@
                 >
                     <h1
                         id="heading"
-                        class="heading-xl text-4.5xl md:text-6xl lg:text-7xl text-left sm:text-center"
+                        class="heading-xl text-4.5xl md:text-6xl lg:text-7xl text-center-desktop"
                     >
                         Startup websites that are out of this world.
                         <!-- Bringing your company into hyperspace with AI. -->
