@@ -6,7 +6,7 @@
             <Stars class="opacity-50" />
 
             <div
-                class="relative max-w-2xl mx-auto md:border-x border-color h-full pb-16 md:pb-40"
+                class="relative max-w-3xl mx-auto md:border-x border-color h-full pb-16 md:pb-40"
             >
                 <!-- <VerticalBars /> -->
 
@@ -20,7 +20,7 @@
                     <div
                         class="heading-sm text-center-desktop text-white opacity-80"
                     >
-                        AI-Powered Study Assistant
+                        Full-Stack AI Application Development
                     </div>
                     <div
                         class="grid grid-cols-3 gap-4 py-6 text-center-desktop"
@@ -30,21 +30,21 @@
                                 90k+
                             </div>
                             <div class="text-secondary-light text-sm">
-                                Active Users
+                                Total Users
                             </div>
                         </div>
                         <div>
                             <div class="heading-xl text-2xl md:text-3xl">
-                                $70k
+                                $70,000
                             </div>
                             <div class="text-secondary-light text-sm">ARR</div>
                         </div>
                         <div>
                             <div class="heading-xl text-2xl md:text-3xl">
-                                5mo
+                                99.9%
                             </div>
                             <div class="text-secondary-light text-sm">
-                                Development time
+                                Uptime
                             </div>
                         </div>
                     </div>
@@ -70,128 +70,212 @@
                 </div>
 
                 <!-- Content Sections -->
-                <div class="px-4 mt-24 space-y-24">
-                    <!-- Challenge Section -->
-                    <section class="space-y-6">
-                        <h2 class="heading-xl text-2xl md:text-3xl">
-                            The Challenge
-                        </h2>
-                        <p class="text-secondary-light leading-relaxed">
-                            Students worldwide struggle with effective study
-                            methods and understanding complex topics.
-                            Traditional study aids often fall short in providing
-                            personalized, interactive learning experiences.
-                        </p>
-                    </section>
+                <div class="px-4 mt-24">
+                    <div class="grid md:grid-cols-2 gap-12 md:gap-24">
+                        <section class="space-y-6">
+                            <h2 class="heading-xl text-2xl md:text-3xl">
+                                Technical Challenge
+                            </h2>
+                            <p class="text-secondary-light leading-relaxed">
+                                We needed to build a scalable, real-time
+                                application that could handle:
+                            </p>
+                            <ul class="space-y-3 text-secondary-light">
+                                <li>
+                                    • Processing and analyzing thousands of
+                                    documents per minute
+                                </li>
+                                <li>
+                                    • Real-time collaborative editing with
+                                    conflict resolution
+                                </li>
+                                <li>
+                                    • Complex AI integrations with sub-second
+                                    response times
+                                </li>
+                                <li>
+                                    • Enterprise-grade security and data privacy
+                                </li>
+                            </ul>
+                        </section>
 
-                    <!-- Solution Section -->
-                    <section class="space-y-6">
-                        <h2 class="heading-xl text-2xl md:text-3xl">
-                            Our Solution
-                        </h2>
-                        <p class="text-secondary-light leading-relaxed">
-                            We built an AI-powered platform that transforms the
-                            way students learn:
-                        </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3">
+                        <section class="space-y-6">
+                            <h2 class="heading-xl text-2xl md:text-3xl">
+                                Our Solution
+                            </h2>
+                            <p class="text-secondary-light leading-relaxed">
+                                We built an AI-powered platform that transforms
+                                the way students learn:
+                            </p>
+                            <ul class="space-y-4 relative">
+                                <!-- Vertical connecting line -->
                                 <div
-                                    class="mt-1 w-5 h-5 rounded-full bg-brand-500 flex items-center justify-center"
-                                >
-                                    <span class="text-xs">1</span>
-                                </div>
-                                <div>
-                                    <h3 class="heading-lg">
-                                        Smart Note Taking
-                                    </h3>
-                                    <p class="text-secondary-light">
-                                        AI-powered note organization and
-                                        enhancement
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div
-                                    class="mt-1 w-5 h-5 rounded-full bg-brand-500 flex items-center justify-center"
-                                >
-                                    <span class="text-xs">2</span>
-                                </div>
-                                <div>
-                                    <h3 class="heading-lg">
-                                        Interactive Learning
-                                    </h3>
-                                    <p class="text-secondary-light">
-                                        Dynamic quizzes and explanations
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div
-                                    class="mt-1 w-5 h-5 rounded-full bg-brand-500 flex items-center justify-center"
-                                >
-                                    <span class="text-xs">3</span>
-                                </div>
-                                <div>
-                                    <h3 class="heading-lg">
-                                        24/7 Study Assistant
-                                    </h3>
-                                    <p class="text-secondary-light">
-                                        Always-available AI tutor
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
+                                    class="absolute left-[0.6rem] top-4 bottom-2 w-0.5 bg-gradient-to-b from-brand-500 to-transparent"
+                                ></div>
 
-                    <!-- Technical Implementation -->
-                    <section class="space-y-8">
-                        <h2 class="heading-xl text-2xl md:text-3xl">
-                            Technical Implementation
-                        </h2>
+                                <li class="flex items-start gap-3">
+                                    <div
+                                        class="mt-1 w-5 h-5 flex-shrink-0 rounded-full bg-brand-500 flex items-center justify-center"
+                                    >
+                                        <span class="text-xs">1</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="heading-sm text-white">
+                                            Smart Note Taking
+                                        </h3>
+                                        <p class="text-secondary-light">
+                                            AI-powered note organization and
+                                            enhancement
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div
+                                        class="mt-1 w-5 h-5 flex-shrink-0 rounded-full bg-brand-500 flex items-center justify-center"
+                                    >
+                                        <span class="text-xs">2</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="heading-sm text-white">
+                                            Interactive Learning
+                                        </h3>
+                                        <p class="text-secondary-light">
+                                            Dynamic quizzes and explanations
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div
+                                        class="mt-1 w-5 h-5 flex-shrink-0 rounded-full bg-brand-500 flex items-center justify-center"
+                                    >
+                                        <span class="text-xs">3</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="heading-sm text-white">
+                                            24/7 Study Assistant
+                                        </h3>
+                                        <p class="text-secondary-light">
+                                            Always-available AI tutor
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div
+                                        class="mt-1 w-5 h-5 flex-shrink-0 rounded-full bg-brand-500 flex items-center justify-center"
+                                    >
+                                        <span class="text-xs">4</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="heading-sm text-white">
+                                            Real-time Collaboration
+                                        </h3>
+                                        <p class="text-secondary-light">
+                                            Study with peers seamlessly
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div
+                                        class="mt-1 w-5 h-5 flex-shrink-0 rounded-full bg-brand-500 flex items-center justify-center"
+                                    >
+                                        <span class="text-xs">5</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="heading-sm text-white">
+                                            Progress Tracking
+                                        </h3>
+                                        <p class="text-secondary-light">
+                                            Analytics and learning insights
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Technical Implementation - Diagonal Layout -->
+                <section class="mt-24 space-y-8">
+                    <h2 class="px-4 heading-xl text-2xl md:text-3xl">
+                        Technical Implementation
+                    </h2>
+
+                    <div class="relative">
+                        <!-- Replace diagonal gradient with subtle border -->
+                        <div
+                            class="absolute inset-0 border-y border-color"
+                        ></div>
 
                         <!-- Tech Stack Grid -->
-                        <div class="grid grid-cols-2 gap-4">
+                        <div
+                            class="px-4 relative grid grid-cols-2 gap-4 md:grid-cols-4 py-12"
+                        >
                             <div
-                                class="bg-secondary/20 rounded-xl p-4 border border-color"
+                                class="bg-secondary/10 backdrop-blur-sm rounded-xl p-6 border border-color"
                             >
-                                <div class="heading-lg">Frontend</div>
+                                <div class="heading-sm text-white">
+                                    Frontend
+                                </div>
                                 <p class="text-secondary-light text-sm">
                                     Vue.js, TailwindCSS
                                 </p>
                             </div>
                             <div
-                                class="bg-secondary/20 rounded-xl p-4 border border-color"
+                                class="bg-secondary/10 backdrop-blur-sm rounded-xl p-6 border border-color"
                             >
-                                <div class="heading-lg">Backend</div>
+                                <div class="heading-sm text-white">Backend</div>
                                 <p class="text-secondary-light text-sm">
                                     Laravel, MySQL
                                 </p>
                             </div>
                             <div
-                                class="bg-secondary/20 rounded-xl p-4 border border-color"
+                                class="bg-secondary/10 backdrop-blur-sm rounded-xl p-6 border border-color"
                             >
-                                <div class="heading-lg">AI</div>
+                                <div class="heading-sm text-white">AI</div>
                                 <p class="text-secondary-light text-sm">
-                                    OpenAI, LangChain
+                                    LLMs, Impulse
                                 </p>
                             </div>
                             <div
-                                class="bg-secondary/20 rounded-xl p-4 border border-color"
+                                class="bg-secondary/10 backdrop-blur-sm rounded-xl p-6 border border-color"
                             >
-                                <div class="heading-lg">Infrastructure</div>
+                                <div class="heading-sm text-white">
+                                    Infrastructure
+                                </div>
                                 <p class="text-secondary-light text-sm">
-                                    AWS, Redis
+                                    AWS, RDS
                                 </p>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Feature Showcase -->
-                        <div class="mt-12 space-y-12">
-                            <!-- Feature 1 -->
-                            <div class="relative">
-                                <div class="heading-lg mb-4">Screenshots</div>
+                    <!-- Feature Showcase - Overlapping Cards -->
+                    <div class="px-4 pt-12 space-y-24">
+                        <div class="relative md:flex items-center gap-8">
+                            <div class="md:w-2/5 space-y-4 z-10">
+                                <h3 class="heading-sm text-white text-xl">
+                                    Smart Note Organization
+                                </h3>
+                                <p class="text-secondary-light leading-relaxed">
+                                    Revolutionary AI-powered system that
+                                    automatically categorizes and enhances
+                                    student notes.
+                                </p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center gap-2">
+                                        <div
+                                            class="w-1.5 h-1.5 rounded-full bg-brand-500"
+                                        ></div>
+                                        <span class="text-secondary-light"
+                                            >Auto-categorization</span
+                                        >
+                                    </li>
+                                    <!-- ... more features ... -->
+                                </ul>
+                            </div>
+                            <div class="md:w-3/5 mt-8 md:mt-0">
                                 <div
-                                    class="aspect-video rounded-xl overflow-hidden border border-color"
+                                    class="relative aspect-video rounded-xl overflow-hidden border border-color glow-purple-small transform md:rotate-3"
                                 >
                                     <img
                                         src="../../../img/notedly-notes.png"
@@ -200,152 +284,178 @@
                                     />
                                 </div>
                             </div>
+                        </div>
 
-                            <!-- Feature 2 -->
-                            <div class="relative">
-                                <!-- <div class="heading-lg mb-4">
-                                    AI Study Assistant -->
-                                <!-- </div> -->
+                        <!-- Reversed layout for second feature -->
+                        <div
+                            class="relative md:flex items-center gap-8 flex-row-reverse"
+                        >
+                            <div class="md:w-2/5 space-y-4 z-10">
+                                <h3 class="heading-sm text-white text-xl">
+                                    Interactive Learning
+                                </h3>
+                                <p class="text-secondary-light leading-relaxed">
+                                    Dynamic quiz generation and personalized
+                                    explanations powered by advanced AI.
+                                </p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center gap-2">
+                                        <div
+                                            class="w-1.5 h-1.5 rounded-full bg-brand-500"
+                                        ></div>
+                                        <span class="text-secondary-light"
+                                            >Smart quiz generation</span
+                                        >
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <div
+                                            class="w-1.5 h-1.5 rounded-full bg-brand-500"
+                                        ></div>
+                                        <span class="text-secondary-light"
+                                            >Adaptive difficulty</span
+                                        >
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <div
+                                            class="w-1.5 h-1.5 rounded-full bg-brand-500"
+                                        ></div>
+                                        <span class="text-secondary-light"
+                                            >Real-time feedback</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="md:w-3/5 mt-8 md:mt-0">
                                 <div
-                                    class="aspect-video rounded-xl overflow-hidden border border-color"
+                                    class="relative aspect-video rounded-xl overflow-hidden border border-color glow-purple-small transform md:-rotate-3"
                                 >
                                     <img
                                         src="../../../img/notedly-dashboard.png"
                                         class="w-full h-full object-cover"
-                                        alt="Notedly AI Assistant Interface"
+                                        alt="Notedly Quiz Interface"
                                     />
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                </section>
 
-                    <!-- Results Section -->
-                    <section class="space-y-8">
-                        <h2 class="heading-xl text-2xl md:text-3xl">Results</h2>
+                <!-- Results Section - Replace floating elements -->
+                <section class="px-4 mt-24 space-y-8">
+                    <h2 class="heading-xl text-2xl md:text-3xl">
+                        Technical Achievements
+                    </h2>
 
-                        <!-- Growth Stats -->
-                        <div class="grid grid-cols-2 gap-4">
+                    <div class="relative">
+                        <!-- Remove floating gradient elements -->
+                        <div class="relative grid grid-cols-2 gap-4">
                             <div
-                                class="bg-secondary/20 rounded-xl p-6 border border-color"
+                                class="bg-secondary/10 backdrop-blur-sm rounded-xl p-8 border border-color hover:border-brand-500/50 transition-colors"
                             >
-                                <div class="heading-xl text-4xl mb-2">94%</div>
-                                <p
-                                    class="text-secondary-light text-center-desktop"
+                                <div
+                                    class="text-white font-[MarvinVisions] font-bold text-4xl mb-2"
                                 >
-                                    User Retention Rate
-                                </p>
-                            </div>
-                            <div
-                                class="bg-secondary/20 rounded-xl p-6 border border-color"
-                            >
-                                <div class="heading-xl text-4xl mb-2">4.8</div>
-                                <p
-                                    class="text-secondary-light text-center-desktop"
-                                >
-                                    App Store Rating
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Growth Chart -->
-                        <!-- <div
-                            class="relative h-64 bg-secondary/20 rounded-xl p-6 border border-color"
-                        >
-                            <GrowthChart />
-                        </div> -->
-                    </section>
-
-                    <!-- Testimonials -->
-                    <section class="space-y-8">
-                        <h2 class="heading-xl text-2xl md:text-3xl">
-                            User Testimonials
-                        </h2>
-                        <div class="grid gap-4">
-                            <div
-                                v-for="testimonial in testimonials"
-                                class="bg-secondary/20 rounded-xl p-6 border border-color"
-                            >
-                                <p class="text-secondary-light italic mb-4">
-                                    "{{ testimonial.quote }}"
-                                </p>
-                                <div class="flex items-center gap-3">
-                                    <img
-                                        :src="testimonial.avatar"
-                                        class="w-10 h-10 rounded-full"
-                                        :alt="testimonial.name"
+                                    <MechanicalCounter
+                                        :start="0"
+                                        :end="99.9"
+                                        after="%"
                                     />
-                                    <div>
-                                        <div class="heading-lg">
-                                            {{ testimonial.name }}
-                                        </div>
-                                        <div
-                                            class="text-secondary-light text-sm"
-                                        >
-                                            {{ testimonial.title }}
-                                        </div>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Next Steps -->
-                    <section class="space-y-6">
-                        <h2 class="heading-xl text-2xl md:text-3xl">
-                            What's Next
-                        </h2>
-                        <p class="text-secondary-light leading-relaxed">
-                            We're continuing to innovate and expand Notedly's
-                            capabilities:
-                        </p>
-                        <div class="space-y-4">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-2 h-2 rounded-full bg-brand-500"
-                                ></div>
                                 <p class="text-secondary-light">
-                                    Mobile app development
+                                    System Uptime
                                 </p>
                             </div>
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-2 h-2 rounded-full bg-brand-500"
-                                ></div>
-                                <p class="text-secondary-light">
-                                    Advanced AI features
-                                </p>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-2 h-2 rounded-full bg-brand-500"
-                                ></div>
-                                <p class="text-secondary-light">
-                                    International expansion
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- CTA Section -->
-                    <section class="relative">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-r from-brand-500/20 to-transparent rounded-xl"
-                        ></div>
-                        <div class="relative p-8 text-center space-y-4">
-                            <h2 class="heading-xl text-2xl md:text-3xl">
-                                Ready to transform your learning?
-                            </h2>
-                            <a
-                                href="https://notedly.ai"
-                                target="_blank"
-                                class="inline-block bg-brand-500 text-white px-6 py-3 rounded-lg heading-lg"
+                            <div
+                                class="bg-secondary/10 backdrop-blur-sm rounded-xl p-8 border border-color hover:border-brand-500/50 transition-colors"
                             >
-                                Try Notedly AI
-                                <span class="ml-2">→</span>
-                            </a>
+                                <div
+                                    class="text-white font-[MarvinVisions] font-bold text-4xl mb-2"
+                                >
+                                    <MechanicalCounter
+                                        :start="0"
+                                        :end="150"
+                                        after="ms"
+                                    />
+                                </div>
+                                <p class="text-secondary-light">
+                                    Average Response Time
+                                </p>
+                            </div>
+                            <div
+                                class="bg-secondary/10 backdrop-blur-sm rounded-xl p-8 border border-color hover:border-brand-500/50 transition-colors"
+                            >
+                                <div
+                                    class="text-white font-[MarvinVisions] font-bold text-4xl mb-2"
+                                >
+                                    <MechanicalCounter
+                                        :start="0"
+                                        :end="1000000"
+                                        after="+"
+                                    />
+                                </div>
+                                <p class="text-secondary-light">
+                                    Daily API Requests
+                                </p>
+                            </div>
                         </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
+
+                <!-- Next Steps -->
+                <section class="mt-12 space-y-6 px-4">
+                    <h2 class="heading-xl text-2xl md:text-3xl">
+                        Technical Roadmap
+                    </h2>
+                    <p class="text-secondary-light leading-relaxed">
+                        Our engineering team is focused on these key
+                        initiatives:
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-2 h-2 rounded-full bg-brand-500"
+                            ></div>
+                            <p class="text-secondary-light">
+                                Native mobile apps with offline capabilities
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-2 h-2 rounded-full bg-brand-500"
+                            ></div>
+                            <p class="text-secondary-light">
+                                GraphQL API implementation
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-2 h-2 rounded-full bg-brand-500"
+                            ></div>
+                            <p class="text-secondary-light">
+                                Multi-region deployment architecture
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA Section -->
+                <section class="mt-12 relative">
+                    <!-- <div
+                        class="absolute inset-0 bg-gradient-to-r from-brand-500/20 to-transparent"
+                    ></div> -->
+                    <div class="relative p-8 text-center bg-secondary">
+                        <h2 class="heading-xl text-2xl md:text-3xl mb-4">
+                            Want to see it in action?
+                        </h2>
+
+                        <a href="https://notedly.ai" target="_blank">
+                            <SecondaryButton>
+                                View Site
+                                <HoverArrow color="primary" />
+                            </SecondaryButton>
+                        </a>
+                    </div>
+                </section>
             </div>
         </div>
     </AppLayout>
@@ -356,7 +466,9 @@ import AppLayout from "@/Layouts/AppLayout.vue";
 import VerticalBars from "@/Components/Decoration/VerticalBars.vue";
 import Meteors from "@/Components/Decoration/Meteors.vue";
 import Stars from "@/Components/Decoration/Stars.vue";
-// import GrowthChart from "@/Components/Charts/GrowthChart.vue";
+import MechanicalCounter from "@/Components/Decoration/MechanicalCounter.vue";
+import SecondaryButton from "@/Components/Buttons/SecondaryButton.vue";
+import HoverArrow from "@/Components/Decoration/HoverArrow.vue";
 
 export default {
     components: {
@@ -364,7 +476,9 @@ export default {
         VerticalBars,
         Meteors,
         Stars,
-        // GrowthChart,
+        MechanicalCounter,
+        SecondaryButton,
+        HoverArrow,
     },
 
     data() {
@@ -382,6 +496,18 @@ export default {
                     name: "James Wilson",
                     title: "Law Student",
                     avatar: "../../../img/testimonials/james.jpg",
+                },
+                {
+                    quote: "I've improved my grades significantly since using Notedly. The AI explanations are incredibly helpful.",
+                    name: "Maria Rodriguez",
+                    title: "Engineering Student",
+                    avatar: "../../../img/testimonials/maria.jpg",
+                },
+                {
+                    quote: "The collaborative features make group study sessions so much more productive.",
+                    name: "David Park",
+                    title: "Business Student",
+                    avatar: "../../../img/testimonials/david.jpg",
                 },
             ],
         };
@@ -422,4 +548,13 @@ export default {
 .glow-purple-large {
     box-shadow: 0 0 200px rgba(110, 103, 238, 0.2);
 }
+
+.glow-purple-small {
+    box-shadow: 0 0 50px rgba(110, 103, 238, 0.1);
+}
+
+/* Add hover effects */
+/* .border-color {
+    @apply border-gray-800/30 hover:border-brand-500/50 transition-colors;
+} */
 </style>

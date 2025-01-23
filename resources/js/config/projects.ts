@@ -18,7 +18,7 @@ const projects = [
     {
         color: "#50ab88",
         name: "Radar",
-        href: "https://useradar.ai",
+        href: "/case-study/radar",
         icon: radarLogo,
         backgroundImage: radarLanding,
         title: "Job Hunting on Autopilot",
@@ -38,7 +38,7 @@ const projects = [
     {
         color: "#726beb",
         name: "Notedly AI",
-        href: "https://notedly.ai",
+        href: "/case-study/notedly",
         icon: "https://i.imgur.com/ifyXr9h.png",
         backgroundImage: notedlyLanding,
         title: "AI Empowering Students",
