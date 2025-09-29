@@ -1,29 +1,29 @@
 <template>
     <div
-        class="relative w-full bg-secondary space-y-16 pb-8 md:py-16 overflow-hidden"
+        class="relative w-full pb-8 space-y-16 overflow-hidden bg-secondary md:py-16"
     >
         <!-- bg-gradient-to-b from-[#18162e] to-[#100e25] -->
         <Meteors />
         <Stars class="opacity-50 scale-x-[-100%]" />
 
         <div class="px-4">
-            <div class="heading-xl pb-6 md:text-4xl lg:text-5xl">
+            <div class="pb-6 heading-xl md:text-4xl lg:text-5xl">
                 First impressions last.
             </div>
-            <div class="heading-sm text-center-desktop text-white">
+            <div class="text-white heading-sm text-center-desktop">
                 This first impression by Syntak landed 90,000+ users and over
                 $70,000 ARR.
             </div>
         </div>
 
-        <div class="w-full px-4 md:px-8 lg:px-24 text-white">
+        <div class="w-full px-4 text-white md:px-8 lg:px-24">
             <!-- <div
                 id="notedly"
-                class="relative rounded-3xl overflow-hidden glow-purple-large"
+                class="relative overflow-hidden rounded-3xl glow-purple-large"
             > -->
             <div
                 id="notedly"
-                class="relative rounded-3xl overflow-hidden glow-purple-large"
+                class="relative overflow-hidden rounded-3xl glow-purple-large"
                 :style="{
                     transform: `perspective(500px) rotateX(${rotation}deg)`,
                 }"
@@ -31,7 +31,7 @@
                 <div class="border-pulse rounded-3xl">
                     <img
                         src="../../../img/notedly.png"
-                        class="relative object-cover rounded-3xl w-full h-full z-10 select-none"
+                        class="relative z-10 object-cover w-full h-full select-none rounded-3xl"
                         alt="Notedly AI User Interface"
                     />
                 </div>
@@ -41,21 +41,21 @@
         <div
             class="bg-gradient-to-b from-transparent via-[#18162e] to-[#18162e] w-full lg:absolute lg:bottom-0 lg:h-screen"
         >
-            <div class="hidden lg:block w-full lg:h-1/3 items-end p-24"></div>
+            <div class="items-end hidden w-full p-24 lg:block lg:h-1/3"></div>
 
-            <div class="w-full h-2/3 px-6 md:px-8 lg:p-24 space-y-10 lg:my-10">
+            <div class="w-full px-6 space-y-10 h-2/3 md:px-8 lg:p-24 lg:my-10">
                 <h6 class="heading-lg">Our projects</h6>
 
                 <div
-                    class="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-16"
+                    class="grid w-full gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-16"
                 >
                     <div
                         v-for="project in projects.slice(0, 3)"
-                        class="w-full rounded-2xl flex flex-col gap-2 py-6 md:p-6"
+                        class="flex flex-col w-full gap-2 py-6 rounded-2xl md:p-6"
                     >
                         <img
                             :src="project.icon"
-                            class="w-8 h-8 rounded-full object-contain"
+                            class="object-contain w-8 h-8 rounded-full"
                             :alt="`${project.name} Logo`"
                         />
 
@@ -65,14 +65,14 @@
                             {{ project.name }}
                         </span>
 
-                        <span class="text-secondary text-white leading-relaxed">
+                        <span class="leading-relaxed text-white text-secondary">
                             {{ project.description }}
                         </span>
 
                         <a
                             :href="project.href"
                             target="_blank"
-                            class="heading-xl text-left text-2xl"
+                            class="text-2xl text-left heading-xl"
                         >
                             View &rarr;
                         </a>

@@ -7,17 +7,17 @@
          -->
         <Hero />
 
-        <!-- <div class="relative w-screen overflow-hidden py-8">
+        <!-- <div class="overflow-hidden relative py-8 w-screen">
             <ProjectCarousel />
         </div> -->
 
-        <NotedlyDisplay />
+        <!-- <NotedlyDisplay />
 
         <Testimonial />
 
         <CallToAction />
 
-        <Footer />
+        <Footer /> -->
     </AppLayout>
 </template>
 

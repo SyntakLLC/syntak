@@ -1,98 +1,66 @@
 <template>
-    <div class="relative overflow-hidden border-b border-color">
-        <Stars class="absolute w-screen opacity-50 z-10" />
+    <div class="overflow-hidden relative bg-black">
         <div id="logo" class="absolute top-8 left-8 z-50">
             <Logo />
         </div>
 
+        <!-- Two Column Layout -->
+        <!-- Left Column - Content -->
         <div
-            class="hidden-mobile absolute mt-48 border-y border-color w-full h-80 md:h-64"
-        />
-
-        <!-- Center of the hero -->
-        <div
-            class="relative max-w-2xl mx-auto md:border-x border-color h-full pb-16 md:pb-40"
+            class="flex !z-10 flex-col justify-center px-4 py-16 space-y-8 md:py-32 lg:py-40 xl:py-48"
         >
-            <VerticalBars />
-
             <div
                 id="datetime"
-                class="hidden-mobile relative h-48 w-full text-secondary-semibold text-center text-white pt-8"
+                class="text-left text-white hidden-mobile text-secondary-semibold"
             >
                 {{ dateTime }}
             </div>
 
-            <div class="pt-28 md:pt-0">
-                <div
-                    id="hero-center-content"
-                    class="relative flex items-center sm:border-b sm:border-t border-color px-4 py-6 mb-6 md:my-0 md:py-0 h-auto md:h-64"
-                >
-                    <h1
-                        id="heading"
-                        class="heading-xl text-4.5xl md:text-6xl lg:text-7xl text-center-desktop"
-                    >
-                        Startup websites that are out of this world.
-                        <!-- Bringing your company into hyperspace with AI. -->
-                    </h1>
-                </div>
-            </div>
+            <h1
+                id="heading"
+                class="z-10 text-4xl text-left text-white heading-xl md:text-5xl lg:text-6xl"
+            >
+                Startup websites
+                <br />
+                that are out of this world.
+            </h1>
 
             <div
                 id="button-section"
-                class="relative px-4 h-full w-full text-center flex justify-start sm:justify-center text-md text-white md:py-8 z-50"
+                class="flex z-50 justify-start text-white text-md"
             >
-                <!-- <SecondaryButton @click="scrollToProjects" class="mr-2">
-                    Our work
-                    <BriefcaseIcon class="w-4 h-4" />
-                </SecondaryButton> -->
                 <ContactUsButton />
             </div>
         </div>
 
-        <!-- Planet -->
-        <div id="planet" class="hidden-mobile z-0">
-            <div
-                class="absolute w-[200vw] aspect-square blur-[50px] top-2/3 -left-full"
+        <!-- Right Column - Video -->
+        <div
+            class="flex absolute top-0 bottom-0 -right-1/4 z-0 pointer-events-none select-none"
+        >
+            <video
+                autoplay
+                loop
+                muted
+                playsinline
+                class="object-cover w-full h-full"
             >
-                <div
-                    class="w-[200vw] absolute aspect-square rounded-full bg-white glow-purple"
-                />
-            </div>
+                <source src="../../../img/black-hole.webm" type="video/webm" />
+            </video>
         </div>
     </div>
 </template>
 
 <script>
-import Stars from "@/Components/Decoration/Stars.vue";
 import Logo from "@/Components/App/Logo.vue";
-import VerticalBars from "@/Components/Decoration/VerticalBars.vue";
 import moment from "moment";
-import { BriefcaseIcon } from "@heroicons/vue/20/solid";
 import ContactUsButton from "@/Components/Buttons/ContactUsButton.vue";
-import SecondaryButton from "@/Components/Buttons/SecondaryButton.vue";
 
 export default {
     name: "Hero",
 
     components: {
-        SecondaryButton,
         ContactUsButton,
-        VerticalBars,
         Logo,
-        Stars,
-        BriefcaseIcon,
-    },
-
-    methods: {
-        scrollToProjects() {
-            const projectsHeading = document.querySelector("h6");
-            if (
-                projectsHeading &&
-                projectsHeading.textContent.includes("More projects")
-            ) {
-                projectsHeading.scrollIntoView({ behavior: "smooth" });
-            }
-        },
     },
 
     computed: {
@@ -103,8 +71,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.glow-purple {
-    box-shadow: 0 0 200px rgb(110 103 238);
-}
-</style>
+<style scoped></style>

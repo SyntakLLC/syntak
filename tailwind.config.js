@@ -17,6 +17,7 @@ export default {
         extend: {
             colors: {
                 brand: colors.sky,
+                ...colors,
             },
             fontFamily: {
                 sans: ["Inter", ...defaultTheme.fontFamily.sans],

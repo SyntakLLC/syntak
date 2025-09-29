@@ -18,7 +18,7 @@ const projects = [
     {
         color: "#50ab88",
         name: "Radar",
-        href: "/case-study/radar",
+        href: "https://useradar.ai",
         icon: radarLogo,
         backgroundImage: radarLanding,
         title: "Job Hunting on Autopilot",
