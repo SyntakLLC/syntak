@@ -1,50 +1,91 @@
+export interface Project {
+    id: string;
+    title: string;
+    period: {
+        start: string;
+        end?: string;
+    };
+    link: string;
+    skills: string[];
+    description: string;
+    logo?: string;
+    isExpanded?: boolean;
+}
 import radarLogo from "../../img/radar-logo.png";
-import radarLanding from "../../img/radar-landing.png";
-import notedlyLanding from "../../img/notedly.png";
-import homexeLanding from "../../img/homexe-dashboard.png";
 
-const projects = [
-    // {
-    //     color: "#f43f5e",
-    //     name: "AI Papi",
-    //     href: "https://aipapi.io",
-    //     icon: "https://i.imgur.com/eVJFA9h.png",
-    //     backgroundImage:
-    //         "https://images.unsplash.com/photo-1635070041078-e363dbe005cb",
-    //     title: "Job Hunting on Autopilot",
-    //     description:
-    //         'Featuring best-on-the-market AI technology, AI Papi gives students a little "help" on their homework. Syntak developed an impressive user interface and a complex suite of backend software to help AI Papi capture the college zeitgeist.',
-    // },
+export const PROJECTS: Project[] = [
     {
-        color: "#50ab88",
-        name: "Radar",
-        href: "https://useradar.ai",
-        icon: radarLogo,
-        backgroundImage: radarLanding,
-        title: "Job Hunting on Autopilot",
-        description:
-            "Pushing AI to its limits, Radar revolutionizes job hunting by making the impossible possible. Using cutting-edge technology, it hunts and applies to jobs while you sleep, capturing the dream of truly effortless job searching.",
+        id: "radar",
+        title: "Radar",
+        period: {
+            start: "2024",
+        },
+        link: "https://useradar.ai",
+        skills: [
+            "Next.js",
+            "TypeScript",
+            "AI/ML",
+            "Chrome Extension",
+            "Automation",
+            "Python",
+            "FastAPI",
+        ],
+        description: `Radar revolutionizes job hunting by making the impossible possible. Using cutting-edge AI technology, it hunts and applies to jobs while you sleep, capturing the dream of truly effortless job searching.
+
+**Key Features:**
+- Automated job discovery and application
+- AI-powered resume optimization
+- Browser extension for seamless integration
+- Real-time application tracking`,
+        logo: radarLogo,
+        isExpanded: true,
     },
     {
-        color: "#4c9dd3",
-        name: "Homexe",
-        href: "https://apps.apple.com/us/app/homexe-win/id1601072257",
-        icon: "https://i.imgur.com/mJER4bw.png",
-        backgroundImage: homexeLanding,
-        title: "Employee Management Made Easy",
-        description:
-            "Syntak designed this beautiful app for the real estate agents at Homexe to help them track their sales progress. The app seamlessly integrated with their CRM, Follow Up Boss, to automate data transfer.",
+        id: "notedly",
+        title: "Notedly AI",
+        period: {
+            start: "2023",
+        },
+        link: "https://notedly.ai",
+        skills: [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "OpenAI",
+            "Stripe",
+            "PostgreSQL",
+        ],
+        description: `An in-house product by Syntak, Notedly offers AI study solutions to over 90,000 students worldwide. The platform integrates bleeding-edge AI technology with a fast, modern, and user friendly UI.
+
+Features include AI-powered note generation, study guides, and essay writing assistance.`,
+        logo: "https://i.imgur.com/ifyXr9h.png",
     },
     {
-        color: "#726beb",
-        name: "Notedly AI",
-        href: "/case-study/notedly",
-        icon: "https://i.imgur.com/ifyXr9h.png",
-        backgroundImage: notedlyLanding,
-        title: "AI Empowering Students",
-        description:
-            "An in-house product by Syntak, Notedly offers AI study solutions to over 90,000 students worldwide. The website, developed over 5 months, integrates bleeding-edge AI technology with a fast, modern, and user friendly UI.",
+        id: "aipapi",
+        title: "AI Papi",
+        period: {
+            start: "2024",
+        },
+        link: "https://aipapi.io",
+        skills: ["Next.js", "React", "TypeScript", "AI/ML", "Image Processing"],
+        description: `Featuring best-on-the-market AI technology, AI Papi gives students a little "help" on their homework. Syntak developed an impressive user interface and a complex suite of backend software to help AI Papi capture the college zeitgeist.`,
+        logo: "https://i.imgur.com/eVJFA9h.png",
+    },
+    {
+        id: "homexe",
+        title: "Homexe",
+        period: {
+            start: "2022",
+            end: "2023",
+        },
+        link: "https://apps.apple.com/us/app/homexe-win/id1601072257",
+        skills: [
+            "React Native",
+            "TypeScript",
+            "CRM Integration",
+            "Mobile Development",
+        ],
+        description: `Syntak designed this beautiful app for the real estate agents at Homexe to help them track their sales progress. The app seamlessly integrated with their CRM, Follow Up Boss, to automate data transfer.`,
+        logo: "https://i.imgur.com/mJER4bw.png",
     },
 ];
-
-export default projects;

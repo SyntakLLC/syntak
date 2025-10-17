@@ -7,7 +7,7 @@
         <!-- Two Column Layout -->
         <!-- Left Column - Content -->
         <div
-            class="flex !z-10 flex-col justify-center px-4 py-16 space-y-8 md:py-32 lg:py-40 xl:py-48"
+            class="flex z-10! flex-col justify-center px-4 py-16 space-y-8 md:py-32 lg:py-40 xl:py-48"
         >
             <div
                 id="datetime"

@@ -2,7 +2,7 @@
     <div class="relative w-full bg-secondary space-y-16 overflow-hidden">
         <div class="relative">
             <div
-                class="bg-gradient-to-t from-transparent via-[#18162e] to-[#18162e] w-full h-full absolute top-0 z-10"
+                class="bg-linear-to-t from-transparent via-[#18162e] to-[#18162e] w-full h-full absolute top-0 z-10"
             />
 
             <div
@@ -47,10 +47,10 @@
 
             <div class="max-w-xl mx-auto my-12 lg:my-20 z-10">
                 <div
-                    class="bg-gradient-to-tl from-[#100e25] to-[#100e2525] rounded-xl border border-gray-700/50 w-full px-8 py-6 glow-purple-large"
+                    class="bg-linear-to-tl from-[#100e25] to-[#100e2525] rounded-xl border border-gray-700/50 w-full px-8 py-6 glow-purple-large"
                 >
                     <span
-                        class="text-2xl lg:text-4xl font-semibold font-display tracking-tighter !text-center text-white"
+                        class="text-2xl lg:text-4xl font-semibold font-display tracking-tighter text-center! text-white"
                     >
                         Whether your product needs
                         <span

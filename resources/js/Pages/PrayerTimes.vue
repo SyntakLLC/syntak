@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex relative justify-center items-center p-4 min-h-screen bg-gradient-to-b from-gray-900 to-gray-800"
+        class="flex relative justify-center items-center p-4 min-h-screen bg-linear-to-b from-gray-900 to-gray-800"
     >
         <Stars />
         <!-- Main Container -->

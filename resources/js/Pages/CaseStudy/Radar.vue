@@ -9,7 +9,7 @@
                 class="relative max-w-3xl mx-auto md:border-x border-color h-full pb-16 md:pb-40"
             >
                 <!-- Hero Section -->
-                <div class="heading-xl relative py-7 px-4 z-[5]">Radar AI</div>
+                <div class="heading-xl relative py-7 px-4 z-5">Radar AI</div>
 
                 <!-- Hero Stats Section -->
                 <div class="px-4 space-y-4 mb-16">
@@ -106,12 +106,12 @@
                             <ul class="space-y-4 relative">
                                 <!-- Vertical connecting line -->
                                 <div
-                                    class="absolute left-[0.6rem] top-4 bottom-2 w-0.5 bg-gradient-to-b from-brand-500 to-transparent"
+                                    class="absolute left-[0.6rem] top-4 bottom-2 w-0.5 bg-linear-to-b from-brand-500 to-transparent"
                                 ></div>
 
                                 <li class="flex items-start gap-3">
                                     <div
-                                        class="mt-1 w-5 h-5 flex-shrink-0 rounded-full bg-[#50ab88] flex items-center justify-center"
+                                        class="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#50ab88] flex items-center justify-center"
                                     >
                                         <span class="text-xs">1</span>
                                     </div>
@@ -128,7 +128,7 @@
 
                                 <li class="flex items-start gap-3">
                                     <div
-                                        class="mt-1 w-5 h-5 flex-shrink-0 rounded-full bg-[#50ab88] flex items-center justify-center"
+                                        class="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#50ab88] flex items-center justify-center"
                                     >
                                         <span class="text-xs">2</span>
                                     </div>
@@ -145,7 +145,7 @@
 
                                 <li class="flex items-start gap-3">
                                     <div
-                                        class="mt-1 w-5 h-5 flex-shrink-0 rounded-full bg-[#50ab88] flex items-center justify-center"
+                                        class="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#50ab88] flex items-center justify-center"
                                     >
                                         <span class="text-xs">3</span>
                                     </div>
@@ -162,7 +162,7 @@
 
                                 <li class="flex items-start gap-3">
                                     <div
-                                        class="mt-1 w-5 h-5 flex-shrink-0 rounded-full bg-[#50ab88] flex items-center justify-center"
+                                        class="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#50ab88] flex items-center justify-center"
                                     >
                                         <span class="text-xs">4</span>
                                     </div>

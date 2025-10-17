@@ -57,7 +57,18 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
 import HoverArrow from "@/Components/Decoration/HoverArrow.vue";
 import Noise from "@/Components/Decoration/Noise.vue";
 import SecondaryButton from "@/Components/Buttons/SecondaryButton.vue";
-import projects from "@/config/projects";
+import { PROJECTS } from "@/config/projects";
+
+// Legacy format for old projects
+const projects = PROJECTS.map((p) => ({
+    color: "#4c9dd3",
+    name: p.title,
+    href: p.link,
+    icon: p.logo || "",
+    backgroundImage: "",
+    title: p.title,
+    description: p.description.split("\n")[0],
+}));
 
 // Import Swiper styles
 import "swiper/css";

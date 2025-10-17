@@ -2,9 +2,9 @@
     <div
         class="relative w-full pb-8 space-y-16 overflow-hidden bg-secondary md:py-16"
     >
-        <!-- bg-gradient-to-b from-[#18162e] to-[#100e25] -->
+        <!-- bg-linear-to-b from-[#18162e] to-[#100e25] -->
         <Meteors />
-        <Stars class="opacity-50 scale-x-[-100%]" />
+        <Stars class="opacity-50 -scale-x-100" />
 
         <div class="px-4">
             <div class="pb-6 heading-xl md:text-4xl lg:text-5xl">
@@ -39,7 +39,7 @@
         </div>
 
         <div
-            class="bg-gradient-to-b from-transparent via-[#18162e] to-[#18162e] w-full lg:absolute lg:bottom-0 lg:h-screen"
+            class="bg-linear-to-b from-transparent via-[#18162e] to-[#18162e] w-full lg:absolute lg:bottom-0 lg:h-screen"
         >
             <div class="items-end hidden w-full p-24 lg:block lg:h-1/3"></div>
 
@@ -88,7 +88,15 @@ import { Link } from "@inertiajs/vue3";
 import Meteors from "@/Components/Decoration/Meteors.vue";
 import Stars from "@/Components/Decoration/Stars.vue";
 import HoverArrow from "@/Components/Decoration/HoverArrow.vue";
-import projects from "@/config/projects";
+import { PROJECTS } from "@/config/projects";
+
+// Legacy format for old projects
+const projects = PROJECTS.map((p) => ({
+    name: p.title,
+    href: p.link,
+    icon: p.logo || "",
+    description: p.description.split("\n")[0],
+}));
 
 export default {
     name: "NotedlyDisplay",

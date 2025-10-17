@@ -1,49 +1,52 @@
 <template>
-    <AppLayout>
-        <!--
-         Should explain who we are.
-         An agency that builds web applications for other businesses, and has our own products.
-         The second part is purely for the legitimacy.
-         -->
-        <Hero />
+    <div class="min-h-screen bg-background text-foreground">
+        <Head>
+            <title>Syntak - Building the software of the space age</title>
+        </Head>
 
-        <!-- <div class="overflow-hidden relative py-8 w-screen">
-            <ProjectCarousel />
-        </div> -->
+        <SiteHeader />
 
-        <!-- <NotedlyDisplay />
+        <main class="max-w-screen overflow-x-hidden px-2">
+            <div class="mx-auto md:max-w-3xl">
+                <ProfileCover />
+                <ProfileHeader />
+                <Separator />
 
-        <Testimonial />
+                <Overview />
+                <Separator />
 
-        <CallToAction />
+                <SocialLinks />
+                <Separator />
 
-        <Footer /> -->
-    </AppLayout>
+                <About />
+                <Separator />
+
+                <GitHubContributions />
+                <Separator />
+
+                <Projects />
+                <Separator />
+
+                <Brand />
+                <Separator />
+            </div>
+        </main>
+
+        <SiteFooter />
+    </div>
 </template>
 
-<script>
-import { Head, Link } from "@inertiajs/vue3";
-import AppLayout from "@/Layouts/AppLayout.vue";
-import Hero from "@/Partials/Landing/Hero.vue";
-import NotedlyDisplay from "@/Partials/Landing/NotedlyDisplay.vue";
-import Testimonial from "@/Partials/Landing/Testimonial.vue";
-import CallToAction from "@/Partials/Landing/CallToAction.vue";
-import Footer from "@/Partials/Footer.vue";
-import ProjectCarousel from "@/Partials/Landing/ProjectCarousel.vue";
-
-export default {
-    name: "Landing",
-
-    components: {
-        Footer,
-        CallToAction,
-        Testimonial,
-        NotedlyDisplay,
-        Hero,
-        ProjectCarousel,
-        Head,
-        Link,
-        AppLayout,
-    },
-};
+<script setup lang="ts">
+import { Head } from "@inertiajs/vue3";
+import SiteHeader from "@/Components/Profile/SiteHeader.vue";
+import ProfileCover from "@/Components/Profile/ProfileCover.vue";
+import ProfileHeader from "@/Components/Profile/ProfileHeader.vue";
+import Overview from "@/Components/Profile/Overview.vue";
+import SocialLinks from "@/Components/Profile/SocialLinks.vue";
+import About from "@/Components/Profile/About.vue";
+import GitHubContributions from "@/Components/Profile/GitHubContributions.vue";
+import Projects from "@/Components/Profile/Projects.vue";
+import Brand from "@/Components/Profile/Brand.vue";
+import Separator from "@/Components/Profile/Separator.vue";
+import SiteFooter from "@/Components/Profile/SiteFooter.vue";
 </script>
