@@ -1,3 +1,8 @@
+import linkedinIcon from "../../img/linkedin-logo.webp";
+import githubIcon from "../../img/github-logo.png";
+import xIcon from "../../img/x-logo.jpg";
+import instagramIcon from "../../img/instagram-logo.png";
+
 export interface SocialLink {
     icon: string;
     title: string;
@@ -7,27 +12,27 @@ export interface SocialLink {
 
 export const SOCIAL_LINKS: SocialLink[] = [
     {
-        icon: "https://cdn.simpleicons.org/linkedin",
+        icon: linkedinIcon,
         title: "LinkedIn",
-        description: "@syntak",
-        href: "https://linkedin.com/company/syntak",
+        description: "amaansyedali",
+        href: "https://linkedin.com/in/amaansyedali",
     },
     {
-        icon: "https://cdn.simpleicons.org/github",
+        icon: githubIcon,
         title: "GitHub",
-        description: "@syntak",
-        href: "https://github.com/syntak",
+        description: "@SyntakLLC",
+        href: "https://github.com/SyntakLLC",
     },
     {
-        icon: "https://cdn.simpleicons.org/x",
+        icon: xIcon,
         title: "X (Twitter)",
-        description: "@syntak",
-        href: "https://x.com/syntak",
+        description: "@AmaanAli630",
+        href: "https://x.com/AmaanAli630",
     },
     {
-        icon: "https://cdn.simpleicons.org/instagram",
+        icon: instagramIcon,
         title: "Instagram",
-        description: "@syntak",
-        href: "https://instagram.com/syntak",
+        description: "@syntakllc",
+        href: "https://instagram.com/syntakllc",
     },
 ];

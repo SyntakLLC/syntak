@@ -1,5 +1,5 @@
 <template>
-    <div class="flex border screen-line-after border-edge">
+    <div class="flex border border-b-0 screen-line-after border-edge">
         <div class="border-r shrink-0 border-edge">
             <div class="mx-[2px] my-[3px]">
                 <img
@@ -47,7 +47,7 @@ import { USER } from "@/config/user";
 }
 
 /* Dark mode */
-:global(.dark) .stripe-pattern {
+.dark .stripe-pattern {
     background-image: repeating-linear-gradient(
         315deg,
         rgba(39, 39, 42, 0.56) 0,

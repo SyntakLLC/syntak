@@ -6,36 +6,36 @@
 
         <div class="grid grid-cols-[2rem_1fr]">
             <div
-                class="flex h-28 items-center justify-center border-r border-dashed border-edge bg-background"
+                class="flex justify-center items-center h-28 border-r border-dashed border-edge bg-background"
             >
                 <span
-                    class="rotate-270 text-sm text-muted-foreground select-none"
+                    class="text-sm select-none rotate-270 text-muted-foreground"
                 >
                     Mark
                 </span>
             </div>
 
             <div
-                class="screen-line-after flex items-center justify-center pr-8 after:z-1"
+                class="flex justify-center items-center pr-8 screen-line-after after:z-1"
             >
-                <Logo class="h-8 w-auto sm:h-12" />
+                <Logo class="w-auto h-8 sm:h-12" color="pink" />
             </div>
 
-            <div
-                class="flex h-28 items-center justify-center border-r border-dashed border-edge bg-background"
+            <!-- <div
+                class="flex justify-center items-center h-28 border-r border-dashed border-edge bg-background"
             >
                 <span
-                    class="rotate-270 text-sm text-muted-foreground select-none"
+                    class="text-sm select-none rotate-270 text-muted-foreground"
                 >
                     Logotype
                 </span>
             </div>
 
             <div
-                class="screen-line-after flex items-center justify-center pr-8 after:z-1"
+                class="flex justify-center items-center pr-8 screen-line-after after:z-1"
             >
-                <Logo class="h-6 w-auto sm:h-10" />
-            </div>
+                <Logo class="w-auto h-6 sm:h-10" />
+            </div> -->
         </div>
     </Panel>
 </template>

@@ -2,11 +2,11 @@
     <Panel id="github">
         <h2 class="sr-only">GitHub Contributions</h2>
 
-        <div class="p-4 flex items-center justify-center">
+        <div class="flex justify-center items-center p-4">
             <img
                 :src="`https://ghchart.rshah.org/${USER.githubUsername}`"
                 :alt="`${USER.displayName}'s GitHub contributions`"
-                class="w-full max-w-full rounded-lg"
+                class="w-full max-w-full rounded-lg dark:invert"
             />
         </div>
     </Panel>

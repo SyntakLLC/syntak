@@ -37,6 +37,68 @@
         background-color: var(--edge);
     }
 
+    /* Responsive variants for sm: screens and up */
+    @media (min-width: 640px) {
+        .sm\:screen-line-before {
+            position: relative;
+        }
+        .sm\:screen-line-before::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100vw;
+            z-index: -1;
+            height: 1px;
+            width: 200vw;
+            background-color: var(--edge);
+        }
+
+        .sm\:screen-line-after {
+            position: relative;
+        }
+        .sm\:screen-line-after::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -100vw;
+            z-index: -1;
+            height: 1px;
+            width: 200vw;
+            background-color: var(--edge);
+        }
+    }
+
+    /* Responsive variants for max-sm: screens */
+    @media (max-width: 639px) {
+        .max-sm\:screen-line-before {
+            position: relative;
+        }
+        .max-sm\:screen-line-before::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100vw;
+            z-index: -1;
+            height: 1px;
+            width: 200vw;
+            background-color: var(--edge);
+        }
+
+        .max-sm\:screen-line-after {
+            position: relative;
+        }
+        .max-sm\:screen-line-after::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -100vw;
+            z-index: -1;
+            height: 1px;
+            width: 200vw;
+            background-color: var(--edge);
+        }
+    }
+
     .bg-size-\[10px_10px\] {
         background-size: 10px 10px;
     }

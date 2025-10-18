@@ -19,6 +19,7 @@ export const PROJECTS: Project[] = [
         title: "Radar",
         period: {
             start: "2024",
+            end: "2025",
         },
         link: "https://useradar.ai",
         skills: [
@@ -64,7 +65,8 @@ Features include AI-powered note generation, study guides, and essay writing ass
         id: "aipapi",
         title: "AI Papi",
         period: {
-            start: "2024",
+            start: "2023",
+            end: "2024",
         },
         link: "https://aipapi.io",
         skills: ["Next.js", "React", "TypeScript", "AI/ML", "Image Processing"],
@@ -76,7 +78,6 @@ Features include AI-powered note generation, study guides, and essay writing ass
         title: "Homexe",
         period: {
             start: "2022",
-            end: "2023",
         },
         link: "https://apps.apple.com/us/app/homexe-win/id1601072257",
         skills: [

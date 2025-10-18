@@ -3,7 +3,7 @@
         :href="href"
         target="_blank"
         rel="noopener"
-        class="group/link flex cursor-pointer items-center gap-4 rounded-2xl p-4 pr-2 transition-colors select-none hover:bg-accent2"
+        class="flex gap-4 items-center p-4 pr-2 transition-colors cursor-pointer select-none group/link hover:bg-accent2"
     >
         <div class="relative size-12 shrink-0">
             <img
@@ -14,14 +14,12 @@
                 height="48"
             />
             <div
-                class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-black/10 ring-inset dark:ring-white/10"
+                class="absolute inset-0 rounded-xl ring-1 ring-inset pointer-events-none ring-black/10 dark:ring-white/10"
             />
         </div>
 
         <div class="flex-1">
-            <h3
-                class="flex items-center font-medium underline-offset-4 group-hover/link:underline"
-            >
+            <h3 class="flex items-center font-medium underline-offset-4">
                 {{ title }}
             </h3>
 

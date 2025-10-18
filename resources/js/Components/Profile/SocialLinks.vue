@@ -1,9 +1,5 @@
 <template>
     <Panel id="social">
-        <PanelHeader>
-            <PanelTitle>Social</PanelTitle>
-        </PanelHeader>
-
         <div class="grid grid-cols-1 sm:grid-cols-2">
             <SocialLinkItem
                 v-for="(link, index) in SOCIAL_LINKS"

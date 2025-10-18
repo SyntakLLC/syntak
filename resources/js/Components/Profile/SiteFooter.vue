@@ -1,43 +1,33 @@
 <template>
-    <footer class="max-w-screen overflow-x-hidden px-2">
+    <footer class="overflow-x-hidden px-2 max-w-screen">
         <div
-            class="screen-line-before mx-auto border-x border-edge pt-4 md:max-w-3xl"
+            class="pt-4 mx-auto screen-line-before border-x border-edge md:max-w-3xl"
         >
             <p
-                class="mb-1 px-4 text-center font-mono text-sm text-balance text-muted-foreground"
+                class="px-4 mb-1 font-mono text-sm text-center text-balance text-muted-foreground"
             >
-                Inspired by tailwindcss.com & ui.shadcn.com
+                Inspired by chanhdai.com
             </p>
 
             <p
-                class="mb-4 px-4 text-center font-mono text-sm text-balance text-muted-foreground"
+                class="px-4 mb-4 font-mono text-sm text-center text-balance text-muted-foreground"
             >
                 Built by
                 <a
                     class="font-medium underline underline-offset-4 hover:text-foreground"
-                    href="https://syntak.dev"
+                    href="https://syntak.co"
                     target="_blank"
                     rel="noopener"
                 >
-                    Syntak
+                    Syntak.
                 </a>
-                . The source code is available on
-                <a
-                    class="font-medium underline underline-offset-4 hover:text-foreground"
-                    href="https://github.com/syntak"
-                    target="_blank"
-                    rel="noopener"
-                >
-                    GitHub
-                </a>
-                .
             </p>
 
             <div
-                class="screen-line-before screen-line-after flex w-full before:z-1 after:z-1 footer-stripe"
+                class="flex w-full screen-line-before screen-line-after before:z-1 after:z-1 footer-stripe"
             >
                 <div
-                    class="mx-auto flex items-center justify-center gap-3 border-x border-edge bg-background px-4"
+                    class="flex gap-3 justify-center items-center px-4 mx-auto border-x border-edge bg-background"
                 >
                     <a
                         class="flex font-mono text-xs font-medium text-muted-foreground hover:text-foreground"

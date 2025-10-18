@@ -24,6 +24,6 @@ Our team combines expertise in AI, full-stack development, and beautiful design 
 
 We're passionate about open source and contributing to the developer community. Let's build something amazing together.`,
     avatar: "../../../img/amaan.jpg",
-    githubUsername: "syntak",
+    githubUsername: "Amaan630",
     dateCreated: "2024-01-01", // YYYY-MM-DD
 };

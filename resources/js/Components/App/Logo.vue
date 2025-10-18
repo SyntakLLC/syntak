@@ -1,5 +1,5 @@
 <template>
-    <div class="h-full w-full flex items-center justify-center">
+    <div class="flex justify-center items-center w-full h-full">
         <Link
             v-if="colorData && isPrebuiltColor"
             :href="route('landing')"
@@ -19,9 +19,7 @@
             v-else-if="colorData"
             :href="route('landing')"
             :style="actualColor"
-            :class="[
-                'max-w-48 -skew-y-3 flex text-center pt-0.5 pb-1 px-3',
-            ]"
+            :class="['max-w-48 -skew-y-3 flex text-center pt-0.5 pb-1 px-3']"
         >
             <span
                 class="z-50 relative text-white font-[MarvinVisions] skew-y-3 font-bold text-3xl"
@@ -32,7 +30,7 @@
         <Link
             v-else
             :href="route('landing')"
-            class="max-w-48 -skew-y-6 flex text-center pb-3 sm:pt-0 sm:pb-3 px-3"
+            class="flex px-3 pb-3 text-center -skew-y-6 max-w-48 sm:pt-0 sm:pb-3"
         >
             <Gradient class="block absolute -inset-1" />
             <span
@@ -46,7 +44,7 @@
 
 <script>
 import { Link } from "@inertiajs/vue3";
-import Gradient from "@/Components/gradient/Gradient.vue";
+import Gradient from "@/Components/Gradient/Gradient.vue";
 
 export default {
     name: "Logo",
