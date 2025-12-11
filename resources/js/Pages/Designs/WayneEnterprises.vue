@@ -6,7 +6,7 @@ import DesignLayout from "@/Layouts/DesignLayout.vue";
 const isNightMode = ref(true);
 
 const heroDay = new URL('../../../designs/WayneEnterprises/hero-background-day.png', import.meta.url).href;
-const heroNight = new URL('../../../designs/WayneEnterprises/hero-background-night.png', import.meta.url).href;
+const heroNight = new URL('../../../designs/WayneEnterprises/hero-background-night-batsignal.png', import.meta.url).href;
 
 const navLinks = ["Investors", "Defense Contracts", "Careers", "Press"];
 
@@ -67,7 +67,7 @@ const press = [
             </div>
         </nav>
 
-        <div class="relative h-screen w-full overflow-hidden">
+        <div class="relative pt-20 pb-36 w-full overflow-hidden">
             <div class="absolute inset-0 z-0 bg-gray-900">
                 <img
                     :src="heroDay"
@@ -91,12 +91,13 @@ const press = [
 
                 <h1
                     :class="[
-                        'uppercase text-5xl md:text-6xl lg:text-7xl transition-colors duration-1000 tracking-widest leading-tight',
+                        'uppercase text-5xl md:text-6xl lg:text-7xl transition-colors duration-1000 leading-tight',
                         isNightMode ? 'text-white' : 'text-slate-900'
                     ]"
                     style="font-family: 'Forum', serif;"
                 >
-                    Illuminating<br />Gotham's Future.
+<!--                    Illuminating<br />Gotham's Future.-->
+                    Protecting Gotham.<br/>Day and night.
                 </h1>
 
                 <div class="mt-10 h-px w-16 bg-current opacity-50" :class="isNightMode ? 'text-white' : 'text-slate-900'"></div>
