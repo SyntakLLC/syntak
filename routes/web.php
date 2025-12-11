@@ -7,6 +7,7 @@ use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LogoController;
 use App\Http\Controllers\PrayerTimesController;
 use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +39,12 @@ Route::get('/logo', LogoController::class)->name('logo');
 
 Route::get('/prayer-times', PrayerTimesController::class)->name('prayer-times');
 Route::post('/api/prayer-times/location', [PrayerTimesController::class, 'getPrayerTimesByLocation'])->name('prayer-times.location');
+
+Route::prefix('designs')->group(function () {
+    Route::get('better-call-saul', function () {
+        return Inertia::render('Designs/BetterCallSaul');
+    });
+    Route::get('wayne-enterprises', function () {
+        return Inertia::render('Designs/WayneEnterprises');
+    });
+});
