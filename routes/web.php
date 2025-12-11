@@ -50,4 +50,7 @@ Route::prefix('designs')->group(function () {
     Route::get('wayne-enterprises', function () {
         return Inertia::render('Designs/WayneEnterprises');
     })->name('designs.wayne-enterprises');
+    Route::get('death-star', function () {
+        return Inertia::render('Designs/DeathStar');
+    })->name('designs.death-star');
 });

@@ -1,12 +1,12 @@
 <template>
     <Head>
-        Better Call Saul
+        <title>Better Call Saul</title>
     </Head>
     <div class="min-h-screen bg-[#fae126] overflow-x-hidden">
         <!-- Header Section -->
         <header>
             <!-- Red Top Banner -->
-            <div class="bg-[#d82d2c] py-3 px-8">
+            <div class="bg-[#d82d2c] py-3 px-8 flex justify-center">
                 <span
                     class="text-[#FFD700] text-xl font-bold uppercase tracking-wide flash-text"
                     style="

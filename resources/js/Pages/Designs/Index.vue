@@ -157,9 +157,9 @@ const designs = [
         description:
             "A retro lawyer website inspired by the iconic TV show character Saul Goodman.",
         bgColor: "#fae126",
-        textColor: "#d82d2c",
-        tagBg: "rgba(216, 45, 44, 0.1)",
-        tagColor: "#d82d2c",
+        textColor: "#fae126",
+        tagBg: "#fae12610",
+        tagColor: "#fae126",
     },
     {
         id: "02",
@@ -172,6 +172,18 @@ const designs = [
         textColor: "#10b981",
         tagBg: "rgba(16, 185, 129, 0.1)",
         tagColor: "#10b981",
+    },
+    {
+        id: "03",
+        slug: "death-star",
+        name: "Death Star",
+        category: "Film Icon",
+        description:
+            "A terrifying propaganda website for the galaxy's newest technological terror.",
+        bgColor: "#050b14",
+        textColor: "#ff3333",
+        tagBg: "#ff333310",
+        tagColor: "#ff3333",
     },
 ];
 
