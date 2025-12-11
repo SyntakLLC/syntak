@@ -53,4 +53,7 @@ Route::prefix('designs')->group(function () {
     Route::get('death-star', function () {
         return Inertia::render('Designs/DeathStar');
     })->name('designs.death-star');
+    Route::get('daily-bugle', function () {
+        return Inertia::render('Designs/DailyBugle');
+    })->name('designs.daily-bugle');
 });

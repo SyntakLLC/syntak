@@ -185,6 +185,18 @@ const designs = [
         tagBg: "#ff333310",
         tagColor: "#ff3333",
     },
+    {
+        id: "04",
+        slug: "daily-bugle",
+        name: "The Daily Bugle",
+        category: "Newspaper",
+        description:
+            "New York's favorite tabloid, featuring J. Jonah Jameson's relentless crusade against Spider-Man.",
+        bgColor: "#c11b17",
+        textColor: "#c11b17",
+        tagBg: "#c11b1710",
+        tagColor: "#c11b17",
+    },
 ];
 
 const isScrolled = ref(false);
