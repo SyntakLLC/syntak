@@ -31,6 +31,7 @@ const press = [
 
 <template>
     <Head>
+        <title>Wayne Enterprises</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Forum:wght@400;700;900&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
