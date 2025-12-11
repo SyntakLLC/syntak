@@ -1,9 +1,4 @@
 <template>
-    <Head>
-        <title>
-            "Better Call Saul!"
-        </title>
-    </Head>
     <div class="min-h-screen bg-[#fae126] overflow-x-hidden">
         <!-- Header Section -->
         <header>
@@ -411,7 +406,7 @@
 </template>
 
 <script setup>
-import { Head } from "@inertiajs/vue3"
+import DesignLayout from "@/Layouts/DesignLayout.vue";
 </script>
 
 <style scoped>

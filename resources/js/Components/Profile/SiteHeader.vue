@@ -27,6 +27,7 @@ import DesktopNav from "./DesktopNav.vue";
 
 const navItems = [
     { title: "About", href: "#about" },
+    { title: "Designs", href: "/designs" },
     { title: "Projects", href: "#projects" },
     { title: "GitHub", href: "#github" },
 ];

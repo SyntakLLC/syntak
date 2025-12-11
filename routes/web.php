@@ -41,10 +41,13 @@ Route::get('/prayer-times', PrayerTimesController::class)->name('prayer-times');
 Route::post('/api/prayer-times/location', [PrayerTimesController::class, 'getPrayerTimesByLocation'])->name('prayer-times.location');
 
 Route::prefix('designs')->group(function () {
+    Route::get('/', function () {
+        return Inertia::render('Designs/Index');
+    })->name('designs.index');
     Route::get('better-call-saul', function () {
         return Inertia::render('Designs/BetterCallSaul');
-    });
+    })->name('designs.better-call-saul');
     Route::get('wayne-enterprises', function () {
         return Inertia::render('Designs/WayneEnterprises');
-    });
+    })->name('designs.wayne-enterprises');
 });

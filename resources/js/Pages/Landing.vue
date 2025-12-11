@@ -1,7 +1,7 @@
 <template>
     <div class="min-h-screen bg-background text-foreground">
         <Head>
-            <title>Syntak - Building the software of the space age</title>
+            <title>Syntak - Building software</title>
         </Head>
 
         <SiteHeader />

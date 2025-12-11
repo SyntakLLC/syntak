@@ -5,7 +5,7 @@ export const USER = {
     username: "syntakllc",
     gender: "male" as const,
     pronouns: "he/him",
-    bio: "Building the software of the space age.",
+    bio: "Building software.",
     address: "Boston, MA",
     phoneNumber: "", // base64 encoded E.164 format
     email: "aGVsbG9Ac3ludGFrLmRldg==", // base64: hello@syntak.dev
