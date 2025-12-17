@@ -56,4 +56,7 @@ Route::prefix('designs')->group(function () {
     Route::get('daily-bugle', function () {
         return Inertia::render('Designs/DailyBugle');
     })->name('designs.daily-bugle');
+    Route::get('jurassic-park', function () {
+        return Inertia::render('Designs/JurassicPark');
+    })->name('designs.jurassic-park');
 });

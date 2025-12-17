@@ -197,6 +197,18 @@ const designs = [
         tagBg: "#c11b1710",
         tagColor: "#c11b17",
     },
+    {
+        id: "05",
+        slug: "jurassic-park",
+        name: "Jurassic Park",
+        category: "Theme Park",
+        description:
+            "Book your expedition to Isla Nublar. Return ferry not guaranteed.",
+        bgColor: "#292524",
+        textColor: "#f59e0b",
+        tagBg: "#f59e0b10",
+        tagColor: "#f59e0b",
+    },
 ];
 
 const isScrolled = ref(false);

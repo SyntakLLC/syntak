@@ -86,7 +86,7 @@ const stats = [
                 <img
                     :src="heroImage"
                     alt="DS-1 Orbital Station"
-                    class="w-full h-full object-cover select-none grayscale brightness-50 contrast-125"
+                    class="w-full h-full object-cover select-none"
                 />
                 <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-transparent via-black/40 to-black/90"></div>
                 <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-black/20"></div>
