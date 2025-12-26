@@ -1,5 +1,6 @@
 <script setup>
 import { Head } from "@inertiajs/vue3";
+import { ref, computed, onMounted, onUnmounted } from "vue";
 
 const date = new Date().toLocaleDateString('en-US', {
     weekday: 'long',
@@ -18,6 +19,75 @@ const headlines = [
     { title: "OSCORP STOCK PLUMMETS 12%", excerpt: "Norman Osborn refuses to comment on the 'glider incident' at the prototype facility." },
     { title: "CAT BURGLAR STRIKES MUSEUM", excerpt: "Black Cat spotted leaving the scene with the Neogenic Tablet. Police remain baffled." },
 ];
+
+// Wordle Game
+const ANSWER = "RAIMI";
+const guesses = ref([]);
+const currentGuess = ref("");
+const gameOver = ref(false);
+const won = ref(false);
+
+const currentRow = computed(() => guesses.value.length);
+const currentCol = computed(() => currentGuess.value.length);
+
+function isActiveCell(row, col) {
+    if (gameOver.value) return false;
+    return row === currentRow.value && col === currentCol.value;
+}
+
+const grid = computed(() => {
+    const rows = [];
+    for (let i = 0; i < 5; i++) {
+        if (i < guesses.value.length) {
+            rows.push(guesses.value[i].split("").map((letter, j) => ({
+                letter,
+                status: getLetterStatus(letter, j, guesses.value[i])
+            })));
+        } else if (i === guesses.value.length && !gameOver.value) {
+            const letters = currentGuess.value.split("");
+            rows.push(Array(5).fill(null).map((_, j) => ({
+                letter: letters[j] || "",
+                status: letters[j] ? "filled" : "empty"
+            })));
+        } else {
+            rows.push(Array(5).fill(null).map(() => ({ letter: "", status: "empty" })));
+        }
+    }
+    return rows;
+});
+
+function getLetterStatus(letter, index, guess) {
+    if (ANSWER[index] === letter) return "correct";
+    if (ANSWER.includes(letter)) {
+        const answerCount = ANSWER.split("").filter(l => l === letter).length;
+        const correctCount = guess.split("").filter((l, i) => l === letter && ANSWER[i] === letter).length;
+        const yellowCount = guess.split("").slice(0, index + 1).filter((l, i) => l === letter && ANSWER[i] !== letter).length;
+        if (correctCount + yellowCount <= answerCount) return "present";
+    }
+    return "absent";
+}
+
+function handleKeydown(e) {
+    if (gameOver.value) return;
+
+    if (e.key === "Enter" && currentGuess.value.length === 5) {
+        guesses.value.push(currentGuess.value.toUpperCase());
+        if (currentGuess.value.toUpperCase() === ANSWER) {
+            gameOver.value = true;
+            won.value = true;
+        } else if (guesses.value.length >= 5) {
+            gameOver.value = true;
+        }
+        currentGuess.value = "";
+    } else if (e.key === "Backspace") {
+        currentGuess.value = currentGuess.value.slice(0, -1);
+    } else if (/^[a-zA-Z]$/.test(e.key) && currentGuess.value.length < 5) {
+        currentGuess.value += e.key.toUpperCase();
+    }
+}
+
+onMounted(() => window.addEventListener("keydown", handleKeydown));
+onUnmounted(() => window.removeEventListener("keydown", handleKeydown));
 </script>
 
 <template>
@@ -170,10 +240,29 @@ const headlines = [
                 </div>
 
                 <div class="mt-auto border-2 border-black p-2 bg-gray-100">
-                    <p class="text-center font-sans font-bold uppercase text-[10px] mb-2">Daily Puzzle</p>
-                    <div class="grid grid-cols-5 gap-px bg-black border border-black">
-                        <div v-for="n in 25" :key="n" class="bg-white aspect-square"></div>
+                    <p class="text-center font-sans font-bold uppercase text-[10px] mb-2">Wordle</p>
+                    <div class="grid grid-cols-5 gap-0.5 font-[Oswald]">
+                        <template v-for="(row, rowIndex) in grid" :key="rowIndex">
+                            <div
+                                v-for="(cell, colIndex) in row"
+                                :key="`${rowIndex}-${colIndex}`"
+                                class="aspect-square border-2 flex items-center justify-center font-bold text-sm uppercase transition-colors"
+                                :class="{
+                                    'bg-white border-gray-300': cell.status === 'empty' && !isActiveCell(rowIndex, colIndex),
+                                    'bg-red-100 border-red-400 border-dashed': isActiveCell(rowIndex, colIndex),
+                                    'bg-white border-black': cell.status === 'filled',
+                                    'bg-green-600 text-white border-green-600': cell.status === 'correct',
+                                    'bg-yellow-500 text-white border-yellow-500': cell.status === 'present',
+                                    'bg-gray-500 text-white border-gray-500': cell.status === 'absent'
+                                }"
+                            >
+                                {{ cell.letter }}
+                            </div>
+                        </template>
                     </div>
+                    <p v-if="won" class="text-center text-[10px] font-bold text-green-700 mt-1">You got it!</p>
+                    <p v-else-if="gameOver" class="text-center text-[10px] font-bold text-red-700 mt-1">{{ ANSWER }}</p>
+                    <p v-else class="text-center text-[8px] text-gray-500 mt-1">Type to play</p>
                 </div>
 
             </div>
