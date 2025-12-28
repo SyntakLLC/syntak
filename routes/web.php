@@ -60,3 +60,15 @@ Route::prefix('designs')->group(function () {
         return Inertia::render('Designs/JurassicPark');
     })->name('designs.jurassic-park');
 });
+
+Route::prefix('pixel-maps')->group(function () {
+    Route::get('privacy-policy', function () {
+        return Inertia::render('PixelMaps/PrivacyPolicy');
+    })->name('pixel-maps.privacy-policy');
+    Route::get('terms-and-conditions', function () {
+        return Inertia::render('PixelMaps/TermsAndConditions');
+    })->name('pixel-maps.terms-and-conditions');
+    Route::get('support', function () {
+        return Inertia::render('PixelMaps/Support');
+    })->name('pixel-maps.support');
+});
